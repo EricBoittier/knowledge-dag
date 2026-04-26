@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-04-26T09:50:36.874Z",
+  "timing_source": "narration.wav weighted by cue text length",
+  "narration_seconds": 59.544218,
+  "default_style": {
+    "font": "Open Sans",
+    "size": 0.05,
+    "line_position": "bottom-center",
+    "tracking": 0,
+    "line_spacing": 1,
+    "box_enabled": true,
+    "box_color": "#00000066",
+    "box_padding": 0.02
+  },
+  "speakers": [
+    {
+      "id": "SPEAKER_00",
+      "style": {
+        "text": "#FFFFFF",
+        "outline": "#101418",
+        "shadow": "#000000A0"
+      }
+    }
+  ],
+  "cue_speaker_map": [
+    {
+      "cue_index": 1,
+      "segment_id": "seg_003",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 2,
+      "segment_id": "seg_003",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 3,
+      "segment_id": "seg_003",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 4,
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 5,
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 6,
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 7,
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 8,
+      "segment_id": "seg_007",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 9,
+      "segment_id": "seg_007",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 10,
+      "segment_id": "seg_007",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 11,
+      "segment_id": "seg_009",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 12,
+      "segment_id": "seg_009",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 13,
+      "segment_id": "seg_011",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 14,
+      "segment_id": "seg_011",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 15,
+      "segment_id": "seg_013",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "cue_index": 16,
+      "segment_id": "seg_013",
+      "speaker_id": "SPEAKER_00"
+    }
+  ]
+}

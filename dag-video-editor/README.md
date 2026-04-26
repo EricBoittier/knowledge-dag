@@ -1,0 +1,81 @@
+# DAG Video Editor (Deprecated Surface)
+
+`dag-video-editor` is kept for compatibility, but the canonical merged flow now lives in `ai-director-app`.
+
+Use:
+
+```bash
+cd ../ai-director-app
+npm run run:dry
+```
+
+This package's `run` scripts now proxy to `ai-director-app` to keep behavior aligned.
+
+## Runtime
+
+- Node 20+
+- Python 3.10+
+- `ffmpeg`, `ffprobe`, `yt-dlp`
+
+## Install
+
+```bash
+cd dag-video-editor
+npm install
+python3 -m pip install -r requirements.txt
+```
+
+## DAG source
+
+MVP uses `data/dag-snapshot.json` with this shape:
+
+```json
+{
+  "nodes": [
+    {"id":"n1","title":"ThunderCats","tags":["cartoon","80s"],"importance":0.9}
+  ],
+  "edges": []
+}
+```
+
+The default snapshot now includes a walrus phylogenetic DFS chain
+(`Eukaryota -> ... -> Odobenus rosmarus`) for the example video workflow.
+
+## Migration Notes
+
+Old stage naming in this package (`plan/search/media/transcribe/subtitles/timeline`) maps to the unified flow in `ai-director-app`:
+
+- `plan` -> `planner`
+- `search` -> `discovery`
+- `media` -> `normalize`
+- `transcribe/subtitles` -> `subtitles`
+- `timeline` -> `export`
+
+Preferred stage control command:
+
+```bash
+cd ../ai-director-app
+npm run build
+node ./dist/core/src/cli/build-project.js --project ./projects/walrus-dfs --from-stage source --to-stage validate --dry-run
+```
+
+## Outputs
+
+- `data/shot-plan.json`
+- `data/candidates.json`
+- `data/selected-clips.json`
+- `data/media-manifest.json`
+- `data/transcript.json`
+- `data/subtitles.srt`
+- `data/transcript.txt`
+- `output/timeline_davinci_resolve.fcpxml`
+
+## DaVinci import
+
+1. Import `output/normalized/*.mov` media.
+2. Import timeline: `output/timeline_davinci_resolve.fcpxml`.
+
+## Notes
+
+- Resolve render/upload remain script hooks in MVP.
+- Use `--skip-upload` to keep processing local.

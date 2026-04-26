@@ -1,0 +1,57 @@
+{
+  "input_dir": "/home/ericb/Documents/knowledge-dag/video-pipeline/input",
+  "output_dir": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized",
+  "entries": [
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/input/A cute creature riding a tiger \ud83d\ude2d.davinci.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/A_cute_creature_riding_a_tiger_.davinci_2b8bef68.normalized.mov",
+      "review": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/A_cute_creature_riding_a_tiger_.davinci_2b8bef68.review.mp4",
+      "source_label": "A cute creature riding a tiger \ud83d\ude2d.davinci",
+      "duration_seconds": 22.291167,
+      "video_codec": "dnxhd",
+      "audio_codec": "pcm_s16le",
+      "timeline": {
+        "enabled": true,
+        "label": "Shot 1",
+        "in_seconds": 0.0,
+        "out_seconds": 21.991
+      },
+      "errors": [],
+      "skipped_existing": false
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/input/Cute tiger #animation #dothingsyoudontwanttodo #sky #youareoneofakind #anime #dothingsyoudo.davinci.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/Cute_tiger_animation_dothingsyoudontwanttodo_sky_youareoneofakind_anime_44f307c3.normalized.mov",
+      "review": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/Cute_tiger_animation_dothingsyoudontwanttodo_sky_youareoneofakind_anime_44f307c3.review.mp4",
+      "source_label": "Cute tiger #animation #dothingsyoudontwanttodo #sky #youareoneofakind #anime #dothingsyoudo.davinci",
+      "duration_seconds": 10.495438,
+      "video_codec": "dnxhd",
+      "audio_codec": "pcm_s16le",
+      "timeline": {
+        "enabled": true,
+        "label": "Shot 2",
+        "in_seconds": 0.2,
+        "out_seconds": 9.895
+      },
+      "errors": [],
+      "skipped_existing": false
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/input/sample.mp4",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/sample_8151325d.normalized.mov",
+      "review": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/sample_8151325d.review.mp4",
+      "source_label": "sample",
+      "duration_seconds": 2.005333,
+      "video_codec": "dnxhd",
+      "audio_codec": "pcm_s16le",
+      "timeline": {
+        "enabled": true,
+        "label": "Shot 3",
+        "in_seconds": 0.4,
+        "out_seconds": 2.005
+      },
+      "errors": [],
+      "skipped_existing": false
+    }
+  ]
+}

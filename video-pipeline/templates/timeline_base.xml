@@ -1,0 +1,5 @@
+<!--
+  Optional base template notes for FCPXML generation.
+  The pipeline currently renders XML directly from Python for MVP simplicity.
+  Keep this file as a placeholder for future templating systems.
+-->

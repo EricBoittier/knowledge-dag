@@ -5,9 +5,11 @@ export const {
     editId,
 
     tagId,
+    sourceId,
 } = tm.fields({
     nodeId : tm.mysql.bigIntUnsigned(),
     editId : tm.mysql.bigIntUnsigned(),
 
     tagId : tm.mysql.bigIntUnsigned(),
+    sourceId : tm.mysql.bigIntUnsigned(),
 });

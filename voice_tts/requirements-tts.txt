@@ -1,0 +1,4 @@
+# Optional stack for voice_tts/scripts/synthesize.py (GPU recommended for XTTS).
+TTS>=0.22.0
+PyYAML>=6.0
+soundfile>=0.12

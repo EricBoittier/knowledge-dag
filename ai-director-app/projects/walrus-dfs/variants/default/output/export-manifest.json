@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-04-26T09:50:53.508Z",
+  "variant_id": "default",
+  "fcpxml": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/timeline_davinci_resolve.fcpxml",
+  "timeline_index_json": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/timeline-index.json",
+  "timeline_index_md": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/timeline-index.md",
+  "subtitles": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/subtitles.srt",
+  "subtitle_cues": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/subtitle-cues.json",
+  "script": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/script.md",
+  "annotations": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/edit-annotations.json",
+  "media_manifest": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/media-manifest.json",
+  "timeline_annotations": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/timeline-annotations.json"
+}

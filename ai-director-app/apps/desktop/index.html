@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Director Desktop</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-block">
+      <h1>AI Director Desktop</h1>
+      <div id="projectHealth" class="project-health">Project Health: waiting for run</div>
+    </div>
+    <div class="header-inputs">
+      <input id="topicInput" placeholder="Topic (e.g., Walrus taxonomy)" />
+      <input id="targetDurationInput" type="number" min="10" step="5" placeholder="Target video seconds" />
+    </div>
+    <div class="header-actions">
+      <div class="action-group">
+        <span class="action-group-title">Project</span>
+        <button id="saveBtn">Save Project</button>
+        <button id="resetProjectBtn">Clean Up & Start Again</button>
+      </div>
+      <div class="action-group">
+        <span class="action-group-title">Script</span>
+        <button id="generateScriptBtn">Generate Script/Style</button>
+      </div>
+      <div class="action-group">
+        <span class="action-group-title">Media</span>
+        <button
+          id="discoverDownloadLoadBtn"
+          title="Runs discovery, downloads &amp; normalizes clips, then loads the media preview."
+        >
+          Discover &amp; load media
+        </button>
+      </div>
+      <div class="action-group">
+        <span class="action-group-title">Export</span>
+        <button id="exportDavinciBtn">Export DaVinci</button>
+      </div>
+    </div>
+  </header>
+  <main class="layout">
+    <aside class="panel stage-sidebar">
+      <h2>Numbered Flow</h2>
+      <ol id="stageList" class="stage-list">
+        <li data-stage="source">1) Source</li>
+        <li data-stage="planner">2) Planner</li>
+        <li data-stage="discovery">3) Discovery</li>
+        <li data-stage="select">4) Select</li>
+        <li data-stage="normalize">5) Normalize</li>
+        <li data-stage="annotations">6) Annotations</li>
+        <li data-stage="subtitles">7) Subtitles</li>
+        <li data-stage="export">8) Export</li>
+        <li data-stage="validate">9) Validate Crop/Timeline</li>
+      </ol>
+      <p class="muted">Use actions in each panel to advance through the stages.</p>
+    </aside>
+    <aside class="panel sidebar">
+      <h2>DAG &amp; graph</h2>
+      <div class="group">
+        <h3>Add Node</h3>
+        <div class="row">
+          <input id="nodeTitle" placeholder="Node title" />
+          <button id="addNodeBtn">Add</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>Build Graph from Wiki Article</h3>
+        <label>Wikipedia title or URL</label>
+        <input id="wikiInput" placeholder="Walrus or https://en.wikipedia.org/wiki/Walrus" />
+        <div class="row">
+          <button id="buildWikiBtn">Build from Wiki</button>
+          <button id="expandDagGeminiBtn">Expand DAG (Gemini)</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>Node Metadata</h3>
+        <label>Selected Node</label>
+        <input id="metaNodeId" readonly />
+        <label>Importance (0-1)</label>
+        <input id="metaImportance" type="number" min="0" max="1" step="0.01" />
+        <label>Tags (comma separated)</label>
+        <input id="metaTags" />
+        <label>Duration Intent (sec)</label>
+        <input id="metaDuration" type="number" min="1" step="1" />
+        <div class="row">
+          <button id="applyMetaBtn">Apply</button>
+          <button id="removeNodeBtn">Remove Node</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <h3>Edges</h3>
+        <div class="row">
+          <button id="connectModeBtn">Click-Connect: OFF</button>
+        </div>
+        <p class="muted">When ON: click source node, then target node to add/remove edge.</p>
+        <div class="row">
+          <select id="edgeFrom"></select>
+          <select id="edgeTo"></select>
+          <button id="addEdgeBtn">Add Edge</button>
+        </div>
+        <div class="row">
+          <button id="removeEdgeBtn">Remove Edge</button>
+        </div>
+        <ul id="edgeList"></ul>
+      </div>
+
+      <div class="group">
+        <h3>Project Nodes</h3>
+        <p class="muted">Click a row to select; matches the graph.</p>
+        <ul id="nodeList"></ul>
+      </div>
+    </aside>
+
+    <section class="panel graph-panel">
+      <h2>DAG Graph</h2>
+      <p class="muted">Click to select metadata. Drag to reposition. Shift-click to chain edges; Ctrl-click (⌘ on Mac) to delete a node.</p>
+      <svg id="graphSvg" viewBox="0 0 1000 700" aria-label="DAG graph canvas"></svg>
+    </section>
+
+    <section class="panel right-column">
+      <p class="right-column-intro muted">Work top to bottom: pick a variant, write script, run discovery, refine clips and overlays, export from the header, then review validation and the timeline index.</p>
+      <div class="stack-card">
+        <h2>1 · Export variant</h2>
+        <p class="muted">Each variant has its own script, media trims, timeline annotations, and export output.</p>
+        <div class="row">
+          <label for="variantSelect">Active cut</label>
+          <select id="variantSelect"></select>
+          <button id="variantReloadBtn" type="button">Reload</button>
+        </div>
+        <div class="row">
+          <input id="newVariantId" placeholder="new_id" />
+          <input id="newVariantLabel" placeholder="Label" />
+          <select id="duplicateFromVariant"></select>
+          <button id="createVariantBtn" type="button">Duplicate variant</button>
+        </div>
+        <div class="row">
+          <button id="syncMediaFromRootBtn" type="button">Sync media from project root</button>
+        </div>
+        <div id="timelineMetaSummary" class="muted"></div>
+      </div>
+      <div class="stack-card">
+        <h2>2 · Script + voiceover</h2>
+        <textarea id="scriptInput" class="script-input" placeholder="Write one narration line per segment..."></textarea>
+        <div class="row row--align-end">
+          <label for="voiceoverEngineSelect">Narration engine</label>
+          <select id="voiceoverEngineSelect" title="Sesame CSM needs GPU stack; set paths in config/pipeline.config.json">
+            <option value="">Default (config file)</option>
+            <option value="espeak">espeak (fast, local)</option>
+            <option value="sesame_csm">Sesame CSM + optional LoRA</option>
+          </select>
+        </div>
+        <p class="muted voiceover-engine-hint">
+          Default uses <code>voiceover.engine</code> in <code>config/pipeline.config.json</code>. Sesame runs
+          <code>voice_tts/scripts/synthesize_sesame_csm.py</code> (see <code>voiceover.sesame_csm</code>).
+        </p>
+        <div class="row">
+          <button id="loadScriptBtn">Load Script</button>
+          <button id="saveScriptBtn">Save Script</button>
+          <button id="generateVoiceoverBtn">Generate Voiceover</button>
+        </div>
+      </div>
+      <div class="stack-card">
+        <h2>3 · Video finder (discovery)</h2>
+        <p class="muted">Status from <strong>Discover &amp; load media</strong> in the header.</p>
+        <div class="finder-filter-row">
+          <label for="finderMaxSizeMb">Max size (MB)</label>
+          <input id="finderMaxSizeMb" type="number" min="1" step="10" placeholder="e.g. 250" />
+          <button id="finderClearSizeFilterBtn" type="button">Clear</button>
+        </div>
+        <div id="finderSummary" class="muted">No run yet.</div>
+        <pre id="finderProgressLog" class="finder-progress-log" aria-live="polite"></pre>
+        <ul id="finderList"></ul>
+      </div>
+      <div class="stack-card">
+        <h2>4 · Media library</h2>
+        <p class="muted">Stills and candidates from discovery; add as timeline overlays.</p>
+        <div class="row">
+          <label for="mediaLibSegmentFilter">Segment</label>
+          <select id="mediaLibSegmentFilter"><option value="">All segments</option></select>
+        </div>
+        <div id="mediaLibraryGrid" class="media-library-grid"></div>
+        <div class="row">
+          <label for="mediaLibStartSec">Overlay start (sec)</label>
+          <input id="mediaLibStartSec" type="number" step="0.1" value="0" min="0" />
+        </div>
+      </div>
+      <div class="stack-card">
+        <h2>5 · Clip preview + trim/crop</h2>
+        <label>Segment</label>
+        <select id="clipSelect"></select>
+        <video id="clipPreview" class="clip-preview" controls preload="metadata"></video>
+        <div class="row">
+          <input id="clipIn" type="number" min="0" step="0.1" placeholder="In sec" />
+          <input id="clipOut" type="number" min="0" step="0.1" placeholder="Out sec" />
+        </div>
+        <div class="row">
+          <input id="cropX" type="number" step="1" placeholder="Crop X" />
+          <input id="cropY" type="number" step="1" placeholder="Crop Y" />
+        </div>
+        <div class="row">
+          <input id="cropW" type="number" step="1" placeholder="Crop W" />
+          <input id="cropH" type="number" step="1" placeholder="Crop H" />
+        </div>
+        <div class="row">
+          <button id="saveClipEditBtn">Save Clip Edit</button>
+        </div>
+      </div>
+      <div class="stack-card">
+        <h2>6 · Timeline studio</h2>
+        <p class="muted">Use <code>mode: "studio"</code> plus <code>text_overlays</code> / <code>media_overlays</code> / <code>markers</code> (see export lane map in import report).</p>
+        <textarea id="timelineStudioJson" class="script-input timeline-studio-json" spellcheck="false"></textarea>
+        <div class="row">
+          <button id="loadTimelineStudioBtn" type="button">Load</button>
+          <button id="saveTimelineStudioBtn" type="button">Save</button>
+        </div>
+      </div>
+      <div class="stack-card">
+        <h2>7 · Export validation</h2>
+        <p class="muted">Crop checks after you run export / validation in the pipeline.</p>
+        <div id="exportValidationSummary" class="muted">No crop validation yet.</div>
+        <ul id="exportValidationList"></ul>
+      </div>
+      <div class="stack-card">
+        <h2>8 · Timeline index</h2>
+        <p class="muted">Ordered spine, narration, captions, studio layers, and markers from the last export.</p>
+        <div class="row">
+          <button id="loadTimelineIndexBtn" type="button">Refresh table</button>
+        </div>
+        <div class="timeline-index-table-wrap">
+          <table id="timelineIndexTable" class="timeline-index-table" aria-label="Timeline contents">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Start</th>
+                <th>End</th>
+                <th>Lane</th>
+                <th>Category</th>
+                <th>Label</th>
+                <th>Detail</th>
+                <th>Source</th>
+              </tr>
+            </thead>
+            <tbody id="timelineIndexTbody"></tbody>
+          </table>
+        </div>
+        <p id="timelineIndexEmpty" class="muted hidden">No timeline-index.json yet — run Export DaVinci.</p>
+      </div>
+    </section>
+  </main>
+  <script src="./ui.js"></script>
+</body>
+</html>

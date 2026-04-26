@@ -1,0 +1,58 @@
+{
+  "discovery": {
+    "sources": ["youtube", "wikimedia"],
+    "prefer_sources": ["wikimedia", "youtube"],
+    "results_per_segment": 8,
+    "selected_per_segment": 1,
+    "min_duration_sec": 8,
+    "max_duration_sec": 120,
+    "allow_unknown_duration": true
+  },
+  "media": {
+    "download_dir": "./output/downloads",
+    "normalized_dir": "./output/normalized",
+    "video_codec": "dnxhd",
+    "video_profile": "dnxhr_hq",
+    "pixel_format": "yuv422p",
+    "audio_codec": "pcm_s16le",
+    "audio_rate": 48000,
+    "audio_channels": 2
+  },
+  "timeline": {
+    "name": "WalrusDfsDirectorCut",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "segment_trim_lead_sec": 0.2,
+    "segment_trim_tail_sec": 0.2
+  },
+  "subtitle": {
+    "max_chars_per_line": 42,
+    "min_cue_seconds": 1.2
+  },
+  "voiceover": {
+    "engine": "espeak",
+    "sesame_csm": {
+      "python": "python3",
+      "script": null,
+      "lora_dir": "../sesame_csm_lora",
+      "model_name": "unsloth/csm-1b",
+      "max_new_tokens": 250,
+      "speaker_id": 0,
+      "device": null,
+      "context_wav": null,
+      "context_text": null
+    }
+  },
+  "caption": {
+    "enabled": true,
+    "lane": -2,
+    "font": "Open Sans",
+    "font_size": 52,
+    "font_face": "Regular",
+    "font_color_hex": "#FFFFFF",
+    "placement": "bottom",
+    "alignment": "center",
+    "vertical_offset_normalized": -0.08
+  }
+}

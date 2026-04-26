@@ -56,8 +56,8 @@ Other versions of MySQL and node may work fine, too.
    1. `npm install --save-dev typescript@3.5.1`
    1. Retry `npm run watch`
 1. `WATCH=TRUE npm run webpack-dev`
-1. `ENV=development.env npm run migrate-up-to-latest`
-1. `npm run start-dev`
+1. `npm run migrate-up-to-latest` (loads `./development.env` automatically if present)
+1. `npm run start` (same)
 
 -----
 

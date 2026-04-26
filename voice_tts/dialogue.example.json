@@ -1,0 +1,7 @@
+{
+  "lines": [
+    { "character": "narrator", "text": "The door creaked open." },
+    { "character": "hero", "text": "Who's there?" },
+    { "character": "villain", "text": "You already know." }
+  ]
+}

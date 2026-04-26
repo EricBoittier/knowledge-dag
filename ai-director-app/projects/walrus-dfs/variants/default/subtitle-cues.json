@@ -1,0 +1,134 @@
+{
+  "generated_at": "2026-04-26T09:50:36.875Z",
+  "narration_seconds": 59.544218,
+  "cues": [
+    {
+      "index": 1,
+      "start": 0,
+      "end": 3.1407,
+      "text": "Welcome to the captivating world of penguins!",
+      "segment_id": "seg_003",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 2,
+      "start": 3.1407,
+      "end": 8.1401,
+      "text": "These iconic birds, with their distinctive waddle and sleek underwater prowess,",
+      "segment_id": "seg_003",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 3,
+      "start": 8.1401,
+      "end": 11.2807,
+      "text": "are truly wonders of the natural world.",
+      "segment_id": "seg_003",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 4,
+      "start": 11.2807,
+      "end": 14.1436,
+      "text": "Though flightless, penguins are master swimmers,",
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 5,
+      "start": 14.1436,
+      "end": 16.857,
+      "text": "perfectly adapted to their aquatic environments.",
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 6,
+      "start": 16.857,
+      "end": 21.9846,
+      "text": "Their torpedo-shaped bodies and powerful flippers make them incredibly agile in the",
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 7,
+      "start": 21.9846,
+      "end": 22.5614,
+      "text": "water.",
+      "segment_id": "seg_005",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 8,
+      "start": 22.5614,
+      "end": 26.5567,
+      "text": "From the colossal Emperor to the diminutive Little Blue,",
+      "segment_id": "seg_007",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 9,
+      "start": 26.5567,
+      "end": 29.6973,
+      "text": "there are 18 distinct species of penguins,",
+      "segment_id": "seg_007",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 10,
+      "start": 29.6973,
+      "end": 34.1199,
+      "text": "each with unique characteristics and habitats across the Southern Hemisphere.",
+      "segment_id": "seg_007",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 11,
+      "start": 34.1199,
+      "end": 40.1234,
+      "text": "The Emperor Penguin, the largest of all, stands majestically on the Antarctic ice,",
+      "segment_id": "seg_009",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 12,
+      "start": 40.1234,
+      "end": 43.6914,
+      "text": "enduring the harshest conditions to raise its young.",
+      "segment_id": "seg_009",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 13,
+      "start": 43.6914,
+      "end": 47.4089,
+      "text": "The Adelie Penguin, a common sight in Antarctica,",
+      "segment_id": "seg_011",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 14,
+      "start": 47.4089,
+      "end": 51.8315,
+      "text": "is known for its bold personality and distinctive white-ringed eyes.",
+      "segment_id": "seg_011",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 15,
+      "start": 51.8315,
+      "end": 56.8309,
+      "text": "Defying typical penguin habitats, the Galapagos Penguin thrives near the equator,",
+      "segment_id": "seg_013",
+      "speaker_id": "SPEAKER_00"
+    },
+    {
+      "index": 16,
+      "start": 56.8309,
+      "end": 59.5442,
+      "text": "a testament to their incredible adaptability.",
+      "segment_id": "seg_013",
+      "speaker_id": "SPEAKER_00"
+    }
+  ]
+}

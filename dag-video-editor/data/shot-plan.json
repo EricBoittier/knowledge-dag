@@ -1,0 +1,110 @@
+{
+  "generated_at": "2026-04-25T14:45:44.806Z",
+  "target_total_runtime_sec": 120,
+  "segments": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Eukaryota",
+      "keywords": [
+        "Eukaryota",
+        "walrus",
+        "taxonomy",
+        "eukaryote"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.95,
+      "query": "Eukaryota walrus taxonomy eukaryote"
+    },
+    {
+      "segment_id": "seg_002",
+      "concept": "Animalia",
+      "keywords": [
+        "Animalia",
+        "walrus",
+        "taxonomy",
+        "animal kingdom"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.93,
+      "query": "Animalia walrus taxonomy animal kingdom"
+    },
+    {
+      "segment_id": "seg_003",
+      "concept": "Chordata",
+      "keywords": [
+        "Chordata",
+        "walrus",
+        "taxonomy",
+        "chordates"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.9,
+      "query": "Chordata walrus taxonomy chordates"
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Mammalia",
+      "keywords": [
+        "Mammalia",
+        "walrus",
+        "taxonomy",
+        "mammal"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.9,
+      "query": "Mammalia walrus taxonomy mammal"
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Carnivora",
+      "keywords": [
+        "Carnivora",
+        "walrus",
+        "taxonomy",
+        "carnivoran"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.86,
+      "query": "Carnivora walrus taxonomy carnivoran"
+    },
+    {
+      "segment_id": "seg_006",
+      "concept": "Caniformia",
+      "keywords": [
+        "Caniformia",
+        "walrus",
+        "taxonomy",
+        "caniform"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.84,
+      "query": "Caniformia walrus taxonomy caniform"
+    },
+    {
+      "segment_id": "seg_007",
+      "concept": "Pinnipedia",
+      "keywords": [
+        "Pinnipedia",
+        "walrus",
+        "taxonomy",
+        "seal relatives"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.88,
+      "query": "Pinnipedia walrus taxonomy seal relatives"
+    },
+    {
+      "segment_id": "seg_008",
+      "concept": "Odobenidae",
+      "keywords": [
+        "Odobenidae",
+        "walrus",
+        "taxonomy",
+        "walrus family"
+      ],
+      "target_duration_sec": 15,
+      "priority": 0.9,
+      "query": "Odobenidae walrus taxonomy walrus family"
+    }
+  ]
+}

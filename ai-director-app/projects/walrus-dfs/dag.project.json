@@ -1,0 +1,239 @@
+{
+  "nodes": [
+    {
+      "id": "n_p1",
+      "title": "Introduction to Penguins",
+      "tags": [
+        "intro",
+        "core"
+      ],
+      "importance": 1,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p2",
+      "title": "Penguin Characteristics",
+      "tags": [
+        "biology",
+        "adaptations"
+      ],
+      "importance": 0.9,
+      "duration_intent_sec": 30
+    },
+    {
+      "id": "n_p3",
+      "title": "Flightless Birds",
+      "tags": [
+        "adaptations"
+      ],
+      "importance": 0.7,
+      "duration_intent_sec": 15
+    },
+    {
+      "id": "n_p4",
+      "title": "Aquatic Adaptations",
+      "tags": [
+        "adaptations",
+        "behavior"
+      ],
+      "importance": 0.8,
+      "duration_intent_sec": 25
+    },
+    {
+      "id": "n_p5",
+      "title": "Penguin Habitats",
+      "tags": [
+        "habitat",
+        "geography"
+      ],
+      "importance": 0.9,
+      "duration_intent_sec": 25
+    },
+    {
+      "id": "n_p6",
+      "title": "Antarctic Penguins",
+      "tags": [
+        "habitat",
+        "species_group"
+      ],
+      "importance": 0.8,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p7",
+      "title": "Temperate Penguins",
+      "tags": [
+        "habitat",
+        "species_group"
+      ],
+      "importance": 0.7,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p8",
+      "title": "Penguin Diet",
+      "tags": [
+        "behavior",
+        "ecology"
+      ],
+      "importance": 0.8,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p9",
+      "title": "Hunting Strategies",
+      "tags": [
+        "behavior"
+      ],
+      "importance": 0.7,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p10",
+      "title": "Penguin Species Overview",
+      "tags": [
+        "species",
+        "classification"
+      ],
+      "importance": 0.9,
+      "duration_intent_sec": 30
+    },
+    {
+      "id": "n_p11",
+      "title": "Emperor Penguin",
+      "tags": [
+        "species",
+        "antarctic"
+      ],
+      "importance": 0.8,
+      "duration_intent_sec": 25
+    },
+    {
+      "id": "n_p12",
+      "title": "Adélie Penguin",
+      "tags": [
+        "species",
+        "antarctic"
+      ],
+      "importance": 0.7,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p13",
+      "title": "Little Blue Penguin",
+      "tags": [
+        "species",
+        "temperate"
+      ],
+      "importance": 0.7,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p14",
+      "title": "Penguin Reproduction",
+      "tags": [
+        "life_cycle",
+        "behavior"
+      ],
+      "importance": 0.8,
+      "duration_intent_sec": 25
+    },
+    {
+      "id": "n_p15",
+      "title": "Penguin Chicks",
+      "tags": [
+        "life_cycle"
+      ],
+      "importance": 0.7,
+      "duration_intent_sec": 20
+    },
+    {
+      "id": "n_p16",
+      "title": "Penguin Conservation",
+      "tags": [
+        "conservation",
+        "threats"
+      ],
+      "importance": 0.9,
+      "duration_intent_sec": 30
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_p1",
+      "to": "n_p2"
+    },
+    {
+      "from": "n_p1",
+      "to": "n_p5"
+    },
+    {
+      "from": "n_p1",
+      "to": "n_p8"
+    },
+    {
+      "from": "n_p1",
+      "to": "n_p10"
+    },
+    {
+      "from": "n_p1",
+      "to": "n_p14"
+    },
+    {
+      "from": "n_p1",
+      "to": "n_p16"
+    },
+    {
+      "from": "n_p2",
+      "to": "n_p3"
+    },
+    {
+      "from": "n_p2",
+      "to": "n_p4"
+    },
+    {
+      "from": "n_p4",
+      "to": "n_p8"
+    },
+    {
+      "from": "n_p5",
+      "to": "n_p6"
+    },
+    {
+      "from": "n_p5",
+      "to": "n_p7"
+    },
+    {
+      "from": "n_p6",
+      "to": "n_p11"
+    },
+    {
+      "from": "n_p6",
+      "to": "n_p12"
+    },
+    {
+      "from": "n_p7",
+      "to": "n_p13"
+    },
+    {
+      "from": "n_p8",
+      "to": "n_p9"
+    },
+    {
+      "from": "n_p10",
+      "to": "n_p11"
+    },
+    {
+      "from": "n_p10",
+      "to": "n_p12"
+    },
+    {
+      "from": "n_p10",
+      "to": "n_p13"
+    },
+    {
+      "from": "n_p14",
+      "to": "n_p15"
+    }
+  ]
+}

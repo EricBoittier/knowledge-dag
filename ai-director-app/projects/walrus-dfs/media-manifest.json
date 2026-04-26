@@ -1,0 +1,198 @@
+{
+  "generated_at": "2026-04-26T09:44:51.257734+00:00",
+  "entries": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Penguins: An Introduction",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=q7qECra-c_Q",
+      "source_title": "Emperor Penguins Nurture a Snowball | Dynasties Preview | BBC Earth",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_001_Emperor_Penguins_Nurture_a_Snowball_Dynasties_Preview_BBC_Earth_8d4015d9.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_001_Emperor_Penguins_Nurture_a_Snowball_Dynasties_Preview_BBC_Earth_8d4015d9.normalized.mov",
+      "duration_seconds": 96.327,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguins: An Introduction",
+        "in_seconds": 0.0,
+        "out_seconds": 96.327
+      }
+    },
+    {
+      "segment_id": "seg_002",
+      "concept": "Penguin Basic Characteristics",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=6kapKaSZ2vo",
+      "source_title": "Meet the Little penguin \ud83d\udc27 - #RAZOR",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_002_Meet_the_Little_penguin_-_RAZOR_e120d9ae.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_002_Meet_the_Little_penguin_-_RAZOR_e120d9ae.normalized.mov",
+      "duration_seconds": 39.72,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguin Basic Characteristics",
+        "in_seconds": 0.0,
+        "out_seconds": 39.72
+      }
+    },
+    {
+      "segment_id": "seg_003",
+      "concept": "Penguin Species Diversity",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=CTux3iEXMZ4",
+      "source_title": "The Many Different Kinds of Penguins \ud83d\udc27 | Nat Geo Kids Penguins Playlist",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_003_The_Many_Different_Kinds_of_Penguins_Nat_Geo_Kids_Penguins_Playl_1a64a9c6.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_003_The_Many_Different_Kinds_of_Penguins_Nat_Geo_Kids_Penguins_Playl_1a64a9c6.normalized.mov",
+      "duration_seconds": 46.151,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguin Species Diversity",
+        "in_seconds": 0.0,
+        "out_seconds": 46.151
+      }
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Emperor Penguin: King of the Ice",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=y_7vmlVCTEo",
+      "source_title": "Atlantic ice,Penguins life.#youtube #naturelovers #atlantic #penguins",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_004_Atlantic_ice_Penguins_life._youtube_naturelovers_atlantic_pengui_8b9af885.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_004_Atlantic_ice_Penguins_life._youtube_naturelovers_atlantic_pengui_8b9af885.normalized.mov",
+      "duration_seconds": 56.266667,
+      "timeline": {
+        "enabled": true,
+        "label": "Emperor Penguin: King of the Ice",
+        "in_seconds": 0.0,
+        "out_seconds": 56.266667
+      }
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Adelie Penguin: Antarctic Resident",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=AGIhMIECwjQ",
+      "source_title": "Playful baboon performs acrobatic dive into the water",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_005_Playful_baboon_performs_acrobatic_dive_into_the_water_9979d07b.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_005_Playful_baboon_performs_acrobatic_dive_into_the_water_9979d07b.normalized.mov",
+      "duration_seconds": 48.153583,
+      "timeline": {
+        "enabled": true,
+        "label": "Adelie Penguin: Antarctic Resident",
+        "in_seconds": 0.0,
+        "out_seconds": 48.153583
+      }
+    },
+    {
+      "segment_id": "seg_007",
+      "concept": "Penguin Adaptations for Survival",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=2ZzhysYGKYI",
+      "source_title": "penguin adaptations - year 2",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_007_penguin_adaptations_-_year_2_f81a39eb.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_007_penguin_adaptations_-_year_2_f81a39eb.normalized.mov",
+      "duration_seconds": 55.096354,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguin Adaptations for Survival",
+        "in_seconds": 0.0,
+        "out_seconds": 55.096354
+      }
+    },
+    {
+      "segment_id": "seg_008",
+      "concept": "Penguin Habitats & Distribution",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=JPn-jYy7hPY",
+      "source_title": "Why are there no penguins in Iceland?",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_008_Why_are_there_no_penguins_in_Iceland_b904e63a.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_008_Why_are_there_no_penguins_in_Iceland_b904e63a.normalized.mov",
+      "duration_seconds": 54.434583,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguin Habitats & Distribution",
+        "in_seconds": 0.0,
+        "out_seconds": 54.434583
+      }
+    },
+    {
+      "segment_id": "seg_009",
+      "concept": "Threats to Penguin Populations",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=Pm5896Iy4V4",
+      "source_title": "Penguin Threats & Predators   #Pets & Animals Facts",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_009_Penguin_Threats_Predators_Pets_Animals_Facts_2109326f.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_009_Penguin_Threats_Predators_Pets_Animals_Facts_2109326f.normalized.mov",
+      "duration_seconds": 74.310875,
+      "timeline": {
+        "enabled": true,
+        "label": "Threats to Penguin Populations",
+        "in_seconds": 0.0,
+        "out_seconds": 74.310875
+      }
+    },
+    {
+      "segment_id": "seg_010",
+      "concept": "Conservation Efforts for Penguins",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=xDapI3KAciw",
+      "source_title": "\"A Place for Penguins\"  - Offical 2019 WCFF Trailer",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_010__A_Place_for_Penguins_-_Offical_2019_WCFF_Trailer_27485d0c.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_010__A_Place_for_Penguins_-_Offical_2019_WCFF_Trailer_27485d0c.normalized.mov",
+      "duration_seconds": 60.146688,
+      "timeline": {
+        "enabled": true,
+        "label": "Conservation Efforts for Penguins",
+        "in_seconds": 0.0,
+        "out_seconds": 60.146688
+      }
+    },
+    {
+      "segment_id": "seg_011",
+      "concept": "Climate Change & Ice Loss",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=ecVrc5OC0lY",
+      "source_title": "Arctic Connected | Sea ice loss and climate change",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_011_Arctic_Connected_Sea_ice_loss_and_climate_change_7af3bb05.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_011_Arctic_Connected_Sea_ice_loss_and_climate_change_7af3bb05.normalized.mov",
+      "duration_seconds": 96.056354,
+      "timeline": {
+        "enabled": true,
+        "label": "Climate Change & Ice Loss",
+        "in_seconds": 0.0,
+        "out_seconds": 96.056354
+      }
+    },
+    {
+      "segment_id": "seg_012",
+      "concept": "Overfishing & Food Scarcity",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=7YNBDAfis7I",
+      "source_title": "China\u2019s Overfishing Crisis: How One Fleet Is Devastating the World\u2019s Oceans",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_012_Chinas_Overfishing_Crisis_How_One_Fleet_Is_Devastating_the_World_8df9e758.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_012_Chinas_Overfishing_Crisis_How_One_Fleet_Is_Devastating_the_World_8df9e758.normalized.mov",
+      "duration_seconds": 39.260333,
+      "timeline": {
+        "enabled": true,
+        "label": "Overfishing & Food Scarcity",
+        "in_seconds": 0.0,
+        "out_seconds": 39.260333
+      }
+    },
+    {
+      "segment_id": "seg_013",
+      "concept": "Penguin Reproduction & Life Cycle",
+      "source": "youtube",
+      "source_url": "https://www.youtube.com/watch?v=0e-0IGIbVqI",
+      "source_title": "Penguin Life Cycle for Kids! \ud83d\udc27 | Learn About a Penguin's Life | Fun Animal Cartoon",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/downloads/seg_013_Penguin_Life_Cycle_for_Kids_Learn_About_a_Penguin_s_Life_Fun_Ani_b512f6da.webm",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/output/normalized/seg_013_Penguin_Life_Cycle_for_Kids_Learn_About_a_Penguin_s_Life_Fun_Ani_b512f6da.normalized.mov",
+      "duration_seconds": 89.031,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguin Reproduction & Life Cycle",
+        "in_seconds": 0.0,
+        "out_seconds": 89.031
+      }
+    }
+  ],
+  "failures": []
+}

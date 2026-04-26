@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whisper dataset builder</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Whisper fine-tune dataset</h1>
+      <p class="sub">
+        Add phrases below, use each row’s <strong>Rec</strong> to capture that line, then export 16&nbsp;kHz mono WAV +
+        <code>metadata.csv</code> for
+        <code>scripts/train.py --dataset-dir …</code>
+      </p>
+    </header>
+
+    <section class="toolbar">
+      <button type="button" id="btn-add-phrase" class="btn">Add phrase</button>
+      <button type="button" id="btn-load-common" class="btn" title="Harvard-style speech sentences — good phonetic coverage">
+        Load common phrases
+      </button>
+      <button type="button" id="btn-load-lines" class="btn">Load from text</button>
+      <button type="button" id="btn-save-dir" class="btn primary">Save to folder…</button>
+      <button type="button" id="btn-download-zip" class="btn">Download ZIP</button>
+      <span id="status" class="status" aria-live="polite"></span>
+    </section>
+
+    <section class="bulk-panel">
+      <label for="bulk-text" class="bulk-label">Paste many phrases (one per line), then <strong>Load from text</strong></label>
+      <textarea
+        id="bulk-text"
+        class="bulk-textarea"
+        rows="5"
+        placeholder="The birch canoe slid on the smooth planks.&#10;Glue the sheet to the dark blue background.&#10;…"
+      ></textarea>
+    </section>
+
+    <p id="record-hint" class="hint hidden">
+      Recording — speak this phrase, then press <strong>Stop</strong> on the same row.
+    </p>
+
+    <main>
+      <ul id="phrase-list" class="phrase-list"></ul>
+      <p id="empty" class="empty hidden">
+        No phrases yet. Try <strong>Load common phrases</strong>, paste into the box and <strong>Load from text</strong>, or
+        <strong>Add phrase</strong>.
+      </p>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js" crossorigin="anonymous"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

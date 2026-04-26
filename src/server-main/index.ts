@@ -3,10 +3,16 @@ import {createApp} from "../server";
 import * as http from "http";
 import * as https from "https";
 import * as fs from "fs";
+import * as path from "path";
 import {TypedEnv} from "@anyhowstep/typed-env";
 
 if (process.env.ENV != undefined) {
     TypedEnv.Load(process.env.ENV);
+} else {
+    const defaultEnvPath = path.resolve(__dirname, "../../development.env");
+    if (fs.existsSync(defaultEnvPath)) {
+        TypedEnv.Load(defaultEnvPath);
+    }
 }
 
 /**

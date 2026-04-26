@@ -14,13 +14,10 @@
     "webpack-dev": "WEBPACK_MODE=development webpack --config ./webpack.config.ts --mode=development",
     "webpack-prod": "WEBPACK_MODE=production webpack --config ./webpack.config.ts --mode=production",
     "start": "ts-node -P ./src/server-main/tsconfig.json ./src/server-main/index.ts",
-    "start-dev": "ENV=./development.env npm run start",
     "pm2-start": "./node_modules/.bin/pm2 start ./dist/server-main/index.js --name=knowledge-dag",
     "pm2-stop": "./node_modules/.bin/pm2 stop knowledge-dag",
     "pm2-restart": "./node_modules/.bin/pm2 restart knowledge-dag",
-    "pm2-log": "./node_modules/.bin/pm2 log",
-    "pm2-start-dev": "ENV=./development.env npm run pm2-start",
-    "pm2-restart-dev": "ENV=./development.env npm run pm2-restart"
+    "pm2-log": "./node_modules/.bin/pm2 log"
   },
   "author": "anyhowstep",
   "license": "MIT",

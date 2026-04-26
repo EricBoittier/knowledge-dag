@@ -1,4 +1,6 @@
 import {TypedEnv} from "@anyhowstep/typed-env";
+import * as fs from "fs";
+import * as path from "path";
 import * as sql from "@squill/squill";
 import * as mysql from "@squill/mysql-5.7";
 import {buildMigrations} from "./build-migrations";
@@ -6,6 +8,11 @@ import {StateStorage} from "./state-storage";
 
 if (process.env.ENV != undefined) {
     TypedEnv.Load(process.env.ENV);
+} else {
+    const defaultEnvPath = path.resolve(__dirname, "../../development.env");
+    if (fs.existsSync(defaultEnvPath)) {
+        TypedEnv.Load(defaultEnvPath);
+    }
 }
 
 /**

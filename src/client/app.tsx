@@ -40,6 +40,7 @@ export function App (_props : Props) {
                             undefined :
                             <React.Fragment>
                                 <Link className="ui item" to={`/markdown-help`}>Markdown Help</Link>
+                                <Link className="ui item" to={`/audio-snippets`}>Audio snippets</Link>
                                 <Link className="ui item" to={`/dirty-node/root/create`}>Recompute All Graphs</Link>
                             </React.Fragment>
                         }
@@ -81,6 +82,7 @@ export function App (_props : Props) {
                     <Route path="/access-token" component={r.AccessToken}/>
                     <Route path="/log-out" component={r.LogOut}/>
                     <Route path="/markdown-help" component={r.MarkdownHelp}/>
+                    <Route path="/audio-snippets" component={r.AudioSnippetsPage}/>
 
                     <Route path="/" component={r.HomePage}/>
                 </Switch>

@@ -12,6 +12,7 @@
         { "path": "../pushdown-automaton" }
     ],
     "include" : [
+        "./**/*.d.ts",
         "./**/*.ts",
         "./**/*.tsx"
     ]

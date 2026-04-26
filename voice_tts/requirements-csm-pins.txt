@@ -1,0 +1,18 @@
+# Known-good versions for Sesame CSM-1B training/synthesis in this repo (Unsloth + PEFT).
+# Install Unsloth first per https://unsloth.ai/docs — then align pins if you need a reproducible env:
+#
+#   pip install "unsloth[...]"   # or your usual Unsloth install
+#   pip install -r requirements-csm-pins.txt --upgrade
+#
+# Python: 3.14.3 was verified; 3.12+ is typical for Unsloth. This repo includes workarounds for
+# Python 3.14 + `datasets` fingerprinting (see voice_ft/common.py, voice_tts/csm_dataset.py).
+
+torch==2.10.0
+transformers==5.5.0
+peft==0.19.1
+datasets==4.3.0
+accelerate==1.13.0
+dill==0.4.0
+unsloth==2026.4.8
+unsloth_zoo==2026.4.9
+soundfile==0.13.1

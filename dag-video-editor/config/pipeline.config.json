@@ -1,0 +1,67 @@
+{
+  "dag": {
+    "mode": "local-json",
+    "snapshot_path": "./data/dag-snapshot.json",
+    "max_segments": 8
+  },
+  "planner": {
+    "target_total_runtime_sec": 120,
+    "default_segment_duration_sec": 15
+  },
+  "youtube": {
+    "max_duration_sec": 120,
+    "min_duration_sec": 8,
+    "language": "en",
+    "region": "US",
+    "results_per_segment": 10,
+    "selected_per_segment": 1
+  },
+  "discovery": {
+    "sources": ["youtube", "wikimedia"],
+    "prefer_sources": ["wikimedia", "youtube"],
+    "allow_unknown_duration": true
+  },
+  "media": {
+    "download_dir": "./output/downloads",
+    "normalized_dir": "./output/normalized",
+    "normalize_container": "mov",
+    "video_codec": "dnxhd",
+    "video_profile": "dnxhr_hq",
+    "pixel_format": "yuv422p",
+    "audio_codec": "pcm_s16le",
+    "audio_rate": 48000,
+    "audio_channels": 2
+  },
+  "transcription": {
+    "enabled": true,
+    "model": "base",
+    "language": "en",
+    "compute_type": "int8",
+    "output_transcript_json": "./data/transcript.json"
+  },
+  "subtitles": {
+    "output_srt": "./data/subtitles.srt",
+    "output_text": "./data/transcript.txt",
+    "max_chars_per_line": 42,
+    "max_lines_per_cue": 2
+  },
+  "timeline": {
+    "name": "DagAutoCut",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "audio_rate": 48000,
+    "output_fcpxml": "./output/timeline_davinci_resolve.fcpxml",
+    "segment_trim_lead_sec": 0.2,
+    "segment_trim_tail_sec": 0.2
+  },
+  "render": {
+    "mode": "manual",
+    "output_video": "./output/final.mp4"
+  },
+  "upload": {
+    "enabled": false,
+    "title_prefix": "DAG Cut",
+    "description_template": "Auto-generated from DAG concepts."
+  }
+}

@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fcpxml version="1.13">
+  <resources>
+    <format id="rFormat" name="FFVideoFormat1080p30" frameDuration="1001/30000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)" />
+    <asset id="r1" name="A_cute_creature_riding_a_tiger_.davinci_2b8bef68.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/A_cute_creature_riding_a_tiger_.davinci_2b8bef68.normalized.mov" start="0s" duration="534988/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+    <asset id="r2" name="Cute_tiger_animation_dothingsyoudontwanttodo_sky_youareoneofakind_anime_44f307c3.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/Cute_tiger_animation_dothingsyoudontwanttodo_sky_youareoneofakind_anime_44f307c3.normalized.mov" start="0s" duration="251891/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+    <asset id="r3" name="sample_8151325d.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/video-pipeline/output/normalized/sample_8151325d.normalized.mov" start="0s" duration="48128/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+  </resources>
+  <library>
+    <event name="VideoPipeline">
+      <project name="AutoTimeline">
+        <sequence format="rFormat" tcStart="0s" tcFormat="NDF">
+          <spine>
+            <asset-clip name="Shot 1" ref="r1" offset="0/24000s" start="0/24000s" duration="527784/24000s" />
+            <asset-clip name="Shot 2" ref="r2" offset="527784/24000s" start="4800/24000s" duration="232680/24000s" />
+            <asset-clip name="Shot 3" ref="r3" offset="760464/24000s" start="9600/24000s" duration="38520/24000s" />
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

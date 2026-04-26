@@ -1,0 +1,75 @@
+{
+  "nodes": [
+    {
+      "id": "n1",
+      "title": "Eukaryota",
+      "tags": ["walrus", "taxonomy", "eukaryote"],
+      "importance": 0.95
+    },
+    {
+      "id": "n2",
+      "title": "Animalia",
+      "tags": ["walrus", "taxonomy", "animal kingdom"],
+      "importance": 0.93
+    },
+    {
+      "id": "n3",
+      "title": "Chordata",
+      "tags": ["walrus", "taxonomy", "chordates"],
+      "importance": 0.9
+    },
+    {
+      "id": "n4",
+      "title": "Mammalia",
+      "tags": ["walrus", "taxonomy", "mammal"],
+      "importance": 0.9
+    },
+    {
+      "id": "n5",
+      "title": "Carnivora",
+      "tags": ["walrus", "taxonomy", "carnivoran"],
+      "importance": 0.86
+    },
+    {
+      "id": "n6",
+      "title": "Caniformia",
+      "tags": ["walrus", "taxonomy", "caniform"],
+      "importance": 0.84
+    },
+    {
+      "id": "n7",
+      "title": "Pinnipedia",
+      "tags": ["walrus", "taxonomy", "seal relatives"],
+      "importance": 0.88
+    },
+    {
+      "id": "n8",
+      "title": "Odobenidae",
+      "tags": ["walrus", "taxonomy", "walrus family"],
+      "importance": 0.9
+    },
+    {
+      "id": "n9",
+      "title": "Odobenus",
+      "tags": ["walrus", "taxonomy", "walrus genus"],
+      "importance": 0.92
+    },
+    {
+      "id": "n10",
+      "title": "Odobenus rosmarus",
+      "tags": ["walrus", "taxonomy", "species"],
+      "importance": 0.98
+    }
+  ],
+  "edges": [
+    { "from": "n1", "to": "n2" },
+    { "from": "n2", "to": "n3" },
+    { "from": "n3", "to": "n4" },
+    { "from": "n4", "to": "n5" },
+    { "from": "n5", "to": "n6" },
+    { "from": "n6", "to": "n7" },
+    { "from": "n7", "to": "n8" },
+    { "from": "n8", "to": "n9" },
+    { "from": "n9", "to": "n10" }
+  ]
+}

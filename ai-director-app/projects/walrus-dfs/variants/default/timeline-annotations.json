@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-04-26T09:36:27.547Z",
+  "mode": "studio",
+  "markers": [],
+  "text_overlays": [],
+  "media_overlays": [
+    {
+      "id": "ml_1777195686414",
+      "kind": "image",
+      "path": "output/stills/lib_8c0c538a0ab131.jpg",
+      "start": 0,
+      "duration": 5,
+      "label": "Picsum placeholder"
+    },
+    {
+      "id": "ml_1777195689983",
+      "kind": "image",
+      "path": "output/stills/lib_2679a149e60d42.jpg",
+      "start": 0,
+      "duration": 5,
+      "label": "Picsum placeholder"
+    },
+    {
+      "id": "ml_1777196187546",
+      "kind": "image",
+      "path": "output/stills/lib_276404017e2fe2.jpg",
+      "start": 0,
+      "duration": 5,
+      "label": "Picsum placeholder"
+    }
+  ]
+}

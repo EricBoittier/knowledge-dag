@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-04-25T14:47:21.407400+00:00",
+  "entries": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Eukaryota",
+      "source_url": "https://www.youtube.com/watch?v=IUy0FBgcy3Y",
+      "source_title": "Science for Everyone by Jazzel Radaza",
+      "source": "youtube",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/downloads/seg_001_Science_for_Everyone_by_Jazzel_Radaza_8a9a2a04.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_001_Science_for_Everyone_by_Jazzel_Radaza_8a9a2a04.normalized.mov",
+      "duration_seconds": 118.333333,
+      "timeline": {
+        "enabled": true,
+        "label": "Eukaryota",
+        "in_seconds": 0.0,
+        "out_seconds": 118.333333
+      }
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Mammalia",
+      "source_url": "https://www.youtube.com/watch?v=lCPythBll0I",
+      "source_title": "How Many Species Of Odobenids Exist? - The Wild Life Explorer",
+      "source": "youtube",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/downloads/seg_004_How_Many_Species_Of_Odobenids_Exist_-_The_Wild_Life_Explorer_50174773.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_004_How_Many_Species_Of_Odobenids_Exist_-_The_Wild_Life_Explorer_50174773.normalized.mov",
+      "duration_seconds": 116.547958,
+      "timeline": {
+        "enabled": true,
+        "label": "Mammalia",
+        "in_seconds": 0.0,
+        "out_seconds": 116.547958
+      }
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Carnivora",
+      "source_url": "https://www.youtube.com/watch?v=UvoPAl5F4us",
+      "source_title": "Siberian Tiger-Walrus",
+      "source": "youtube",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/downloads/seg_005_Siberian_Tiger-Walrus_12fc1e70.mp4",
+      "normalized": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_005_Siberian_Tiger-Walrus_12fc1e70.normalized.mov",
+      "duration_seconds": 25.309771,
+      "timeline": {
+        "enabled": true,
+        "label": "Carnivora",
+        "in_seconds": 0.0,
+        "out_seconds": 25.309771
+      }
+    },
+    {
+      "segment_id": "seg_007",
+      "concept": "Pinnipedia",
+      "source_url": "https://www.youtube.com/watch?v=GHtohN13pjA",
+      "source_title": "Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!",
+      "source": "youtube",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/downloads/seg_007_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_6c3d69ca.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_007_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_6c3d69ca.normalized.mov",
+      "duration_seconds": 97.457667,
+      "timeline": {
+        "enabled": true,
+        "label": "Pinnipedia",
+        "in_seconds": 0.0,
+        "out_seconds": 97.457667
+      }
+    },
+    {
+      "segment_id": "seg_008",
+      "concept": "Odobenidae",
+      "source_url": "https://www.youtube.com/watch?v=GHtohN13pjA",
+      "source_title": "Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!",
+      "source": "youtube",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/downloads/seg_008_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_63f9d1c7.mkv",
+      "normalized": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_008_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_63f9d1c7.normalized.mov",
+      "duration_seconds": 97.457667,
+      "timeline": {
+        "enabled": true,
+        "label": "Odobenidae",
+        "in_seconds": 0.0,
+        "out_seconds": 97.457667
+      }
+    }
+  ]
+}

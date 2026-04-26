@@ -1,0 +1,13 @@
+# Map story/game characters to reference speech clips (~6–30s WAV works well for XTTS).
+# Copy to characters.yaml and point reference_wav at your own files.
+
+default_language: en
+
+characters:
+  narrator:
+    reference_wav: samples/narrator_ref.wav
+  hero:
+    reference_wav: samples/hero_ref.wav
+    # language: en
+  villain:
+    reference_wav: samples/villain_ref.wav

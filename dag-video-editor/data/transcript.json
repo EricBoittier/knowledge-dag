@@ -1,0 +1,78 @@
+{
+  "generated_at": "2026-04-25T16:06:15.068156+00:00",
+  "pipeline_stage": "transcribe",
+  "engine": {
+    "name": "dry-run-template",
+    "model": "base",
+    "language": "en"
+  },
+  "language": "en",
+  "segments": [
+    {
+      "id": 1,
+      "start": 0.0,
+      "end": 118.333,
+      "speaker": "SPEAKER_00",
+      "text": "Eukaryota: Science for Everyone by Jazzel Radaza",
+      "source_segment_id": "seg_001",
+      "source_path": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_001_Science_for_Everyone_by_Jazzel_Radaza_8a9a2a04.normalized.mov",
+      "clip_duration_seconds": 118.333333,
+      "timeline_in_seconds": 0.0,
+      "timeline_out_seconds": 118.333333,
+      "words": []
+    },
+    {
+      "id": 2,
+      "start": 118.333,
+      "end": 234.881,
+      "speaker": "SPEAKER_00",
+      "text": "Mammalia: How Many Species Of Odobenids Exist? - The Wild Life Explorer",
+      "source_segment_id": "seg_004",
+      "source_path": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_004_How_Many_Species_Of_Odobenids_Exist_-_The_Wild_Life_Explorer_50174773.normalized.mov",
+      "clip_duration_seconds": 116.547958,
+      "timeline_in_seconds": 0.0,
+      "timeline_out_seconds": 116.547958,
+      "words": []
+    },
+    {
+      "id": 3,
+      "start": 234.881,
+      "end": 260.191,
+      "speaker": "SPEAKER_00",
+      "text": "Carnivora: Siberian Tiger-Walrus",
+      "source_segment_id": "seg_005",
+      "source_path": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_005_Siberian_Tiger-Walrus_12fc1e70.normalized.mov",
+      "clip_duration_seconds": 25.309771,
+      "timeline_in_seconds": 0.0,
+      "timeline_out_seconds": 25.309771,
+      "words": []
+    },
+    {
+      "id": 4,
+      "start": 260.191,
+      "end": 357.649,
+      "speaker": "SPEAKER_00",
+      "text": "Pinnipedia: Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!",
+      "source_segment_id": "seg_007",
+      "source_path": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_007_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_6c3d69ca.normalized.mov",
+      "clip_duration_seconds": 97.457667,
+      "timeline_in_seconds": 0.0,
+      "timeline_out_seconds": 97.457667,
+      "words": []
+    },
+    {
+      "id": 5,
+      "start": 357.649,
+      "end": 455.106,
+      "speaker": "SPEAKER_00",
+      "text": "Odobenidae: Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!",
+      "source_segment_id": "seg_008",
+      "source_path": "/home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_008_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_63f9d1c7.normalized.mov",
+      "clip_duration_seconds": 97.457667,
+      "timeline_in_seconds": 0.0,
+      "timeline_out_seconds": 97.457667,
+      "words": []
+    }
+  ],
+  "text": "Eukaryota: Science for Everyone by Jazzel Radaza Mammalia: How Many Species Of Odobenids Exist? - The Wild Life Explorer Carnivora: Siberian Tiger-Walrus Pinnipedia: Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference! Odobenidae: Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!"
+}

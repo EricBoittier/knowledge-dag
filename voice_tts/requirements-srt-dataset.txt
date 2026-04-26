@@ -1,0 +1,2 @@
+# Local UI for build_dataset_from_video_srt.py (optional).
+gradio>=4.0.0

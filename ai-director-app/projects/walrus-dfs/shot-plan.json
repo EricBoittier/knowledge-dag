@@ -1,0 +1,175 @@
+{
+  "generated_at": "2026-04-26T09:42:46.884Z",
+  "traversal": "depth_first",
+  "segments": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Penguins: An Introduction",
+      "keywords": [
+        "Penguins: An Introduction",
+        "overview",
+        "seed"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.98,
+      "query": "Penguins: An Introduction overview seed"
+    },
+    {
+      "segment_id": "seg_002",
+      "concept": "Penguin Basic Characteristics",
+      "keywords": [
+        "Penguin Basic Characteristics",
+        "biology",
+        "traits"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.85,
+      "query": "Penguin Basic Characteristics biology traits"
+    },
+    {
+      "segment_id": "seg_003",
+      "concept": "Penguin Species Diversity",
+      "keywords": [
+        "Penguin Species Diversity",
+        "classification",
+        "types"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.8,
+      "query": "Penguin Species Diversity classification types"
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Emperor Penguin: King of the Ice",
+      "keywords": [
+        "Emperor Penguin: King of the Ice",
+        "species",
+        "example"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.7,
+      "query": "Emperor Penguin: King of the Ice species example"
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Adelie Penguin: Antarctic Resident",
+      "keywords": [
+        "Adelie Penguin: Antarctic Resident",
+        "species",
+        "example"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.65,
+      "query": "Adelie Penguin: Antarctic Resident species example"
+    },
+    {
+      "segment_id": "seg_006",
+      "concept": "Galapagos Penguin: Equatorial Survivor",
+      "keywords": [
+        "Galapagos Penguin: Equatorial Survivor",
+        "species",
+        "example",
+        "unique"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.6,
+      "query": "Galapagos Penguin: Equatorial Survivor species example unique"
+    },
+    {
+      "segment_id": "seg_007",
+      "concept": "Penguin Adaptations for Survival",
+      "keywords": [
+        "Penguin Adaptations for Survival",
+        "biology",
+        "evolution"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.8,
+      "query": "Penguin Adaptations for Survival biology evolution"
+    },
+    {
+      "segment_id": "seg_008",
+      "concept": "Penguin Habitats & Distribution",
+      "keywords": [
+        "Penguin Habitats & Distribution",
+        "geography",
+        "environment"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.75,
+      "query": "Penguin Habitats & Distribution geography environment"
+    },
+    {
+      "segment_id": "seg_009",
+      "concept": "Threats to Penguin Populations",
+      "keywords": [
+        "Threats to Penguin Populations",
+        "conservation",
+        "threats"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.9,
+      "query": "Threats to Penguin Populations conservation threats"
+    },
+    {
+      "segment_id": "seg_010",
+      "concept": "Conservation Efforts for Penguins",
+      "keywords": [
+        "Conservation Efforts for Penguins",
+        "conservation",
+        "solutions"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.95,
+      "query": "Conservation Efforts for Penguins conservation solutions"
+    },
+    {
+      "segment_id": "seg_011",
+      "concept": "Climate Change & Ice Loss",
+      "keywords": [
+        "Climate Change & Ice Loss",
+        "threats",
+        "climate"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.85,
+      "query": "Climate Change & Ice Loss threats climate"
+    },
+    {
+      "segment_id": "seg_012",
+      "concept": "Overfishing & Food Scarcity",
+      "keywords": [
+        "Overfishing & Food Scarcity",
+        "threats",
+        "food_chain"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.8,
+      "query": "Overfishing & Food Scarcity threats food_chain"
+    },
+    {
+      "segment_id": "seg_013",
+      "concept": "Penguin Reproduction & Life Cycle",
+      "keywords": [
+        "Penguin Reproduction & Life Cycle",
+        "biology",
+        "life_cycle"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.65,
+      "query": "Penguin Reproduction & Life Cycle biology life_cycle"
+    },
+    {
+      "segment_id": "seg_014",
+      "concept": "Penguin Diet & Hunting Strategies",
+      "keywords": [
+        "Penguin Diet & Hunting Strategies",
+        "ecology",
+        "behavior"
+      ],
+      "target_duration_sec": 3,
+      "priority": 0.7,
+      "query": "Penguin Diet & Hunting Strategies ecology behavior"
+    }
+  ]
+}

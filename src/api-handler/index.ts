@@ -1,6 +1,7 @@
 import * as express from "route-express";
 import {RouteInitArgs} from "./route-init-delegate";
 import * as initRouteDelegates from "./all";
+import {initAudioSnippetUpload} from "./audio-snippet-upload";
 
 export interface InitArgs extends Pick<RouteInitArgs, "pool"> {
     readonly app : express.IMainApp<{ locals : {} }>;
@@ -77,6 +78,11 @@ export function init ({ app, pool, accessToken } : InitArgs) {
             addLogInAttempt(ipAddress);
             res.status(401).end();
         });
+    initAudioSnippetUpload({
+        app : apiApp,
+        pool,
+        accessToken,
+    });
     for (const initRouteDelegate of Object.values(initRouteDelegates)) {
         initRouteDelegate({
             app : apiApp,

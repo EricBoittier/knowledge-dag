@@ -8,3 +8,21 @@ v8-compile-cache-0
 run-time-dist
 client/img
 
+# Large binary media (voice/video datasets, exports, yt-dlp downloads)
+*.aac
+*.avi
+*.flac
+*.m4a
+*.m4v
+*.mkv
+*.mov
+*.mp3
+*.mp4
+*.ogg
+*.wav
+*.webm
+
+# Local dataset / tooling outputs (keep paths; do not commit blobs)
+srt_dataset_out/
+outputs_csm/
+unsloth_compiled_cache/

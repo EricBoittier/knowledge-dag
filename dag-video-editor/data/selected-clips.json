@@ -1,0 +1,128 @@
+{
+  "generated_at": "2026-04-25T14:46:38.384Z",
+  "segments": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Eukaryota",
+      "query": "Eukaryota walrus taxonomy eukaryote",
+      "selected": [
+        {
+          "segment_id": "seg_001",
+          "concept": "Eukaryota",
+          "query": "Eukaryota walrus taxonomy eukaryote",
+          "source": "youtube",
+          "source_id": "IUy0FBgcy3Y",
+          "title": "Science for Everyone by Jazzel Radaza",
+          "url": "https://www.youtube.com/watch?v=IUy0FBgcy3Y",
+          "creator": "UNRScience",
+          "duration_sec": 119,
+          "license": "platform",
+          "attribution": "UNRScience",
+          "score": 1.01
+        }
+      ]
+    },
+    {
+      "segment_id": "seg_002",
+      "concept": "Animalia",
+      "query": "Animalia walrus taxonomy animal kingdom",
+      "selected": []
+    },
+    {
+      "segment_id": "seg_003",
+      "concept": "Chordata",
+      "query": "Chordata walrus taxonomy chordates",
+      "selected": []
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Mammalia",
+      "query": "Mammalia walrus taxonomy mammal",
+      "selected": [
+        {
+          "segment_id": "seg_004",
+          "concept": "Mammalia",
+          "query": "Mammalia walrus taxonomy mammal",
+          "source": "youtube",
+          "source_id": "lCPythBll0I",
+          "title": "How Many Species Of Odobenids Exist? - The Wild Life Explorer",
+          "url": "https://www.youtube.com/watch?v=lCPythBll0I",
+          "creator": "The Wild Life Explorer",
+          "duration_sec": 117,
+          "license": "platform",
+          "attribution": "The Wild Life Explorer",
+          "score": 1.03
+        }
+      ]
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Carnivora",
+      "query": "Carnivora walrus taxonomy carnivoran",
+      "selected": [
+        {
+          "segment_id": "seg_005",
+          "concept": "Carnivora",
+          "query": "Carnivora walrus taxonomy carnivoran",
+          "source": "youtube",
+          "source_id": "UvoPAl5F4us",
+          "title": "Siberian Tiger-Walrus",
+          "url": "https://www.youtube.com/watch?v=UvoPAl5F4us",
+          "creator": "siberian tiger walrus",
+          "duration_sec": 26,
+          "license": "platform",
+          "attribution": "siberian tiger walrus",
+          "score": 1.94
+        }
+      ]
+    },
+    {
+      "segment_id": "seg_006",
+      "concept": "Caniformia",
+      "query": "Caniformia walrus taxonomy caniform",
+      "selected": []
+    },
+    {
+      "segment_id": "seg_007",
+      "concept": "Pinnipedia",
+      "query": "Pinnipedia walrus taxonomy seal relatives",
+      "selected": [
+        {
+          "segment_id": "seg_007",
+          "concept": "Pinnipedia",
+          "query": "Pinnipedia walrus taxonomy seal relatives",
+          "source": "youtube",
+          "source_id": "GHtohN13pjA",
+          "title": "Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!",
+          "url": "https://www.youtube.com/watch?v=GHtohN13pjA",
+          "creator": "FreshWaste 活力小廚餘",
+          "duration_sec": 98,
+          "license": "platform",
+          "attribution": "FreshWaste 活力小廚餘",
+          "score": 1.22
+        }
+      ]
+    },
+    {
+      "segment_id": "seg_008",
+      "concept": "Odobenidae",
+      "query": "Odobenidae walrus taxonomy walrus family",
+      "selected": [
+        {
+          "segment_id": "seg_008",
+          "concept": "Odobenidae",
+          "query": "Odobenidae walrus taxonomy walrus family",
+          "source": "youtube",
+          "source_id": "GHtohN13pjA",
+          "title": "Seals vs Sea Lions vs Walruses vs Dugongs: Spot the Difference!",
+          "url": "https://www.youtube.com/watch?v=GHtohN13pjA",
+          "creator": "FreshWaste 活力小廚餘",
+          "duration_sec": 98,
+          "license": "platform",
+          "attribution": "FreshWaste 活力小廚餘",
+          "score": 1.22
+        }
+      ]
+    }
+  ]
+}

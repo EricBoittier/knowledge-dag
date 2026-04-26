@@ -1,0 +1,3 @@
+# Re-transcribe clip WAVs to fix bad YouTube/SRT captions (voice_tts/scripts/refine_dataset_text_whisper.py).
+faster-whisper>=1.0.0
+tqdm>=4.65.0

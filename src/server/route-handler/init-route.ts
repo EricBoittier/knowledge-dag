@@ -18,6 +18,11 @@ export function initRoute ({ pool, app, accessToken } : RouteInitArgs) {
     });
 
     app.use(
+        "/audio-snippets",
+        rawExpress.static(path.resolve(process.cwd(), "data/audio-snippets"))
+    );
+
+    app.use(
         rawExpress.static(__dirname + "/../../../client")
     );
     app.get("*", function (req, res) {

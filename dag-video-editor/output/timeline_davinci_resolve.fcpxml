@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<fcpxml version="1.13">
+  <resources>
+    <format id="rFormat" name="FFVideoFormat1080p30" frameDuration="1001/30000s" width="1920" height="1080" colorSpace="1-1-1 (Rec. 709)" />
+    <asset id="r1" name="seg_001_Science_for_Everyone_by_Jazzel_Radaza_8a9a2a04.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_001_Science_for_Everyone_by_Jazzel_Radaza_8a9a2a04.normalized.mov" start="0s" duration="2840000/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+    <asset id="r2" name="seg_004_How_Many_Species_Of_Odobenids_Exist_-_The_Wild_Life_Explorer_50174773.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_004_How_Many_Species_Of_Odobenids_Exist_-_The_Wild_Life_Explorer_50174773.normalized.mov" start="0s" duration="2797151/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+    <asset id="r3" name="seg_005_Siberian_Tiger-Walrus_12fc1e70.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_005_Siberian_Tiger-Walrus_12fc1e70.normalized.mov" start="0s" duration="607435/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+    <asset id="r4" name="seg_007_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_6c3d69ca.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_007_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_6c3d69ca.normalized.mov" start="0s" duration="2338984/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+    <asset id="r5" name="seg_008_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_63f9d1c7.normalized.mov" src="file:///home/ericb/Documents/knowledge-dag/dag-video-editor/output/normalized/seg_008_Seals_vs_Sea_Lions_vs_Walruses_vs_Dugongs_Spot_the_Difference_63f9d1c7.normalized.mov" start="0s" duration="2338984/24000s" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="48000" format="rFormat" />
+  </resources>
+  <library>
+    <event name="DagVideoEditor">
+      <project name="DagAutoCut">
+        <sequence format="rFormat" tcStart="0s" tcFormat="NDF">
+          <spine>
+            <asset-clip name="Eukaryota" ref="r1" offset="0/24000s" start="0/24000s" duration="2840000/24000s" />
+            <asset-clip name="Mammalia" ref="r2" offset="2840000/24000s" start="0/24000s" duration="2797151/24000s" />
+            <asset-clip name="Carnivora" ref="r3" offset="5637151/24000s" start="0/24000s" duration="607435/24000s" />
+            <asset-clip name="Pinnipedia" ref="r4" offset="6244585/24000s" start="0/24000s" duration="2338984/24000s" />
+            <asset-clip name="Odobenidae" ref="r5" offset="8583569/24000s" start="0/24000s" duration="2338984/24000s" />
+          </spine>
+        </sequence>
+      </project>
+    </event>
+  </library>
+</fcpxml>

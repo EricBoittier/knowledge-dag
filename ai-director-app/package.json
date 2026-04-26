@@ -1,0 +1,18 @@
+{
+  "name": "ai-director-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "commonjs",
+  "description": "Desktop-first AI director app for DAG-driven video creation",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "desktop": "node ./apps/desktop/server.js",
+    "run:dry": "npm run build && node ./dist/core/src/cli/build-project.js --project ./projects/walrus-dfs --dry-run",
+    "run": "npm run build && node ./dist/core/src/cli/build-project.js --project ./projects/walrus-dfs",
+    "test:crop-validation": "npm run build && node --test ./dist/timeline-davinci/src/validate-crop.test.js ./dist/timeline-davinci/src/export-variant.test.js"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "typescript": "^5.8.3"
+  }
+}

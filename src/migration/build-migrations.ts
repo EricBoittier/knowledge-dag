@@ -7,6 +7,8 @@ export function buildMigrations (pool : sql.IPool) : readonly migrator.Migration
 
     const migrations : readonly migrator.Migration[] = [
         sqlMigration("00000-initial-structure"),
+        sqlMigration("00001-source"),
+        sqlMigration("00002-source-audio-enum"),
     ];
 
     return migrations;

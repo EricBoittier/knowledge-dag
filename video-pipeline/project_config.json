@@ -1,0 +1,43 @@
+{
+  "paths": {
+    "input_dir": "./input",
+    "output_dir": "./output",
+    "normalized_dir": "./output/normalized",
+    "manifest_path": "./output/normalized/manifest.json",
+    "timeline_output": "./output/timeline_davinci_resolve.fcpxml"
+  },
+  "media_policy": {
+    "container": "mov",
+    "video_codec": "dnxhd",
+    "video_profile": "dnxhr_hq",
+    "pixel_format": "yuv422p",
+    "audio_codec": "pcm_s16le",
+    "audio_sample_rate": 48000,
+    "audio_channels": 2,
+    "frame_rate": 30
+  },
+  "review_policy": {
+    "enabled": true,
+    "container": "mp4",
+    "video_codec": "libsvtav1",
+    "video_crf": 30,
+    "video_preset": 6,
+    "audio_codec": "pcm_s16le"
+  },
+  "timeline": {
+    "name": "AutoTimeline",
+    "width": 1920,
+    "height": 1080,
+    "frame_rate": 30,
+    "audio_rate": 48000,
+    "include_intro": false,
+    "intro_path": "",
+    "include_outro": false,
+    "outro_path": "",
+    "include_music": false,
+    "music_path": "",
+    "music_gain_db": -18.0,
+    "music_fade_in_s": 1.0,
+    "music_fade_out_s": 1.0
+  }
+}
