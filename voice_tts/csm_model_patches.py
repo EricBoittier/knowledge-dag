@@ -18,6 +18,8 @@ def patch_csm_create_causal_mask_for_1d_position_ids() -> None:
     ``CsmDepthDecoderModel`` (Transformers 5.5) builds ``position_ids`` as a 1D ``arange(seq)`` and passes it to
     ``create_causal_mask``. ``masking_utils.find_packed_sequence_indices`` expects shape ``[batch, seq]`` and indexes
     ``position_ids[:, :1]``, which crashes on 1D tensors. Expand to ``[batch, seq]`` before the original implementation.
+    ``CsmDepthDecoderModel`` calls ``create_causal_mask`` with keyword-only args (no positional ``inputs_embeds``),
+    so the wrapper must read ``inputs_embeds`` from ``kwargs``.
 
     Also rebind ``modeling_csm.create_causal_mask`` — that module imports the function by value, not by reference.
     """
@@ -31,16 +33,18 @@ def patch_csm_create_causal_mask_for_1d_position_ids() -> None:
 
     def _wrapped(*args: Any, **kwargs: Any) -> Any:
         position_ids = kwargs.get("position_ids")
-        if (
-            position_ids is not None
-            and position_ids.dim() == 1
-            and len(args) >= 2
-            and hasattr(args[1], "shape")
-            and args[1].ndim >= 2
-        ):
-            kwargs = dict(kwargs)
-            b = int(args[1].shape[0])
-            kwargs["position_ids"] = position_ids.unsqueeze(0).expand(b, -1).contiguous()
+        if position_ids is not None and position_ids.dim() == 1:
+            inputs_embeds = kwargs.get("inputs_embeds")
+            if inputs_embeds is None and len(args) >= 2:
+                inputs_embeds = args[1]
+            if (
+                inputs_embeds is not None
+                and hasattr(inputs_embeds, "shape")
+                and inputs_embeds.ndim >= 2
+            ):
+                kwargs = dict(kwargs)
+                b = int(inputs_embeds.shape[0])
+                kwargs["position_ids"] = position_ids.unsqueeze(0).expand(b, -1).contiguous()
         return _orig(*args, **kwargs)
 
     _wrapped.__name__ = getattr(_orig, "__name__", "create_causal_mask")
