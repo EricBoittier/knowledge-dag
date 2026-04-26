@@ -32,6 +32,7 @@ from unsloth import FastModel, is_bfloat16_supported
 
 from csm_dataset import build_csm_processed_dataset, load_local_csm_raw
 from csm_model_patches import (
+    patch_csm_create_causal_mask_for_1d_position_ids,
     patch_depth_decoder_causal_lm_forward,
     patch_depth_decoder_embedding_clone,
 )
@@ -88,6 +89,7 @@ def parse_args():
 
 def main():
     args = parse_args()
+    patch_csm_create_causal_mask_for_1d_position_ids()
     if not args.dataset_dir.is_dir():
         raise SystemExit(f"--dataset-dir is not a directory: {args.dataset_dir}")
     if args.save_steps is not None and args.save_steps < 1:

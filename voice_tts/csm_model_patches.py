@@ -3,11 +3,51 @@
 from __future__ import annotations
 
 import types
+from typing import Any
 
 import torch
 import torch.nn as nn
 from transformers.loss.loss_utils import ForCausalLMLoss
 from transformers.modeling_outputs import CausalLMOutputWithPast
+
+_PATCH_CREATE_CAUSAL_MASK_ATTR = "_kd_csm_create_causal_mask_1d_fix"
+
+
+def patch_csm_create_causal_mask_for_1d_position_ids() -> None:
+    """
+    ``CsmDepthDecoderModel`` (Transformers 5.5) builds ``position_ids`` as a 1D ``arange(seq)`` and passes it to
+    ``create_causal_mask``. ``masking_utils.find_packed_sequence_indices`` expects shape ``[batch, seq]`` and indexes
+    ``position_ids[:, :1]``, which crashes on 1D tensors. Expand to ``[batch, seq]`` before the original implementation.
+
+    Also rebind ``modeling_csm.create_causal_mask`` — that module imports the function by value, not by reference.
+    """
+    import transformers.masking_utils as masking_utils
+    from transformers.models.csm import modeling_csm
+
+    if getattr(masking_utils, _PATCH_CREATE_CAUSAL_MASK_ATTR, False):
+        return
+
+    _orig: Any = masking_utils.create_causal_mask
+
+    def _wrapped(*args: Any, **kwargs: Any) -> Any:
+        position_ids = kwargs.get("position_ids")
+        if (
+            position_ids is not None
+            and position_ids.dim() == 1
+            and len(args) >= 2
+            and hasattr(args[1], "shape")
+            and args[1].ndim >= 2
+        ):
+            kwargs = dict(kwargs)
+            b = int(args[1].shape[0])
+            kwargs["position_ids"] = position_ids.unsqueeze(0).expand(b, -1).contiguous()
+        return _orig(*args, **kwargs)
+
+    _wrapped.__name__ = getattr(_orig, "__name__", "create_causal_mask")
+    _wrapped.__doc__ = getattr(_orig, "__doc__", None)
+    masking_utils.create_causal_mask = _wrapped
+    modeling_csm.create_causal_mask = _wrapped
+    setattr(masking_utils, _PATCH_CREATE_CAUSAL_MASK_ATTR, True)
 
 
 def _hf_csm_depth_decoder_causal_lm_forward(
@@ -56,6 +96,8 @@ def _hf_csm_depth_decoder_causal_lm_forward(
 
     codebook_indices = torch.arange(seq_len, device=device) + past_seen_tokens
 
+    # Do not let kwargs override normalized position_ids (Unsloth may pass position_ids in **kwargs).
+    kw2 = {k: v for k, v in kwargs.items() if k != "position_ids"}
     outputs = self.model(
         input_ids=input_ids,
         backbone_last_hidden_state=backbone_last_hidden_state,
@@ -64,7 +106,7 @@ def _hf_csm_depth_decoder_causal_lm_forward(
         past_key_values=past_key_values,
         inputs_embeds=inputs_embeds,
         use_cache=use_cache,
-        **kwargs,
+        **kw2,
     )
 
     hidden_states = outputs[0]

@@ -35,6 +35,7 @@ from peft import PeftModel
 from transformers import AutoProcessor, CsmForConditionalGeneration
 
 from csm_model_patches import (
+    patch_csm_create_causal_mask_for_1d_position_ids,
     patch_depth_decoder_causal_lm_forward,
     patch_depth_decoder_embedding_clone,
 )
@@ -56,6 +57,7 @@ def parse_args():
 
 def main():
     args = parse_args()
+    patch_csm_create_causal_mask_for_1d_position_ids()
     if args.context_wav is not None and not args.context_wav.is_file():
         raise SystemExit(f"Missing --context-wav: {args.context_wav}")
     if args.context_wav is not None and not args.context_text:
