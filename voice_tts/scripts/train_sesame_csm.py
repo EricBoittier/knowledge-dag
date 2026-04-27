@@ -35,6 +35,7 @@ from csm_model_patches import (
     patch_csm_create_causal_mask_for_1d_position_ids,
     patch_depth_decoder_causal_lm_forward,
     patch_depth_decoder_embedding_clone,
+    sync_csm_backbone_audio_embedding_from_depth,
 )
 
 
@@ -83,6 +84,19 @@ def parse_args():
         type=Path,
         default=None,
         help="Resume from a Trainer checkpoint dir, e.g. outputs_csm/checkpoint-500",
+    )
+    p.add_argument(
+        "--audio-peak-norm",
+        type=float,
+        default=None,
+        metavar="MAX",
+        help="Normalize each clip: scale so max |sample| is MAX (e.g. 0.99). Default: no normalization.",
+    )
+    p.add_argument(
+        "--min-audio-rms",
+        type=float,
+        default=None,
+        help="Drop clips with RMS below this (on loaded mono audio, before peak norm). Try 0.005–0.02.",
     )
     return p.parse_args()
 
@@ -134,6 +148,11 @@ def main():
         use_rslora=False,
         loftq_config=None,
     )
+    if sync_csm_backbone_audio_embedding_from_depth(model):
+        print(
+            "Synced backbone audio embeddings from depth decoder (unsloth/csm-1b checkpoint).",
+            flush=True,
+        )
     if patch_depth_decoder_embedding_clone(model) == 0:
         print(
             "Warning: depth-decoder embedding clone patch did not apply "
@@ -147,7 +166,12 @@ def main():
             flush=True,
         )
 
-    raw_ds = load_local_csm_raw(args.dataset_dir, speaker_id=args.speaker_id)
+    raw_ds = load_local_csm_raw(
+        args.dataset_dir,
+        speaker_id=args.speaker_id,
+        peak_norm_max=args.audio_peak_norm,
+        min_rms=args.min_audio_rms,
+    )
     processed_ds = build_csm_processed_dataset(raw_ds, processor)
 
     use_epochs = args.num_train_epochs is not None

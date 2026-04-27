@@ -38,7 +38,20 @@ from csm_model_patches import (
     patch_csm_create_causal_mask_for_1d_position_ids,
     patch_depth_decoder_causal_lm_forward,
     patch_depth_decoder_embedding_clone,
+    sync_csm_backbone_audio_embedding_from_depth,
 )
+
+
+def _extract_generated_audio(out) -> torch.Tensor:
+    """``model.generate(..., output_audio=True)`` may return a list of waveforms or a ``CsmGenerateOutput``."""
+    if hasattr(out, "audio") and out.audio is not None:
+        return out.audio[0]
+    if isinstance(out, (list, tuple)) and len(out) > 0:
+        return out[0]
+    raise TypeError(
+        f"Unexpected generate() return type {type(out)!r}; expected a list of audio tensors or CsmGenerateOutput "
+        "with .audio set. Do not index with [0] on ModelOutput (that is token sequences, not waveform)."
+    )
 
 
 def parse_args():
@@ -82,6 +95,12 @@ def main():
     model.eval()
     model.to(device)
 
+    if sync_csm_backbone_audio_embedding_from_depth(model):
+        print(
+            "Synced backbone audio embeddings from depth decoder (required for unsloth/csm-1b checkpoints).",
+            flush=True,
+        )
+
     # Unsloth replaces depth-decoder forward with (*args, **kwargs), so Transformers 5.5
     # generate() rejects backbone_last_hidden_state in model_kwargs. Training patches restore
     # HF-forward behavior and the embedding clone (in-place row-0 write + PEFT).
@@ -123,14 +142,15 @@ def main():
 
     inputs = inputs.to(device)
     with torch.no_grad():
-        audio_values = model.generate(
+        gen_out = model.generate(
             **inputs,
             max_new_tokens=args.max_new_tokens,
             output_audio=True,
+            return_dict_in_generate=False,
         )
-    audio = audio_values[0].to(torch.float32).cpu().numpy()
+    wav = _extract_generated_audio(gen_out).to(torch.float32).cpu()
     args.out.parent.mkdir(parents=True, exist_ok=True)
-    sf.write(str(args.out), audio, 24_000)
+    processor.save_audio([wav], str(args.out.resolve()))
     print(args.out.resolve())
 
 

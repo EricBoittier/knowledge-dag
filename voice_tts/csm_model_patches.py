@@ -13,6 +13,41 @@ from transformers.modeling_outputs import CausalLMOutputWithPast
 _PATCH_CREATE_CAUSAL_MASK_ATTR = "_kd_csm_create_causal_mask_1d_fix"
 
 
+def resolve_csm_core(model: nn.Module) -> nn.Module | None:
+    """Find ``CsmForConditionalGeneration`` under Unsloth / PEFT wrappers."""
+    m: nn.Module = model
+    if hasattr(m, "base_model"):
+        m = m.base_model
+    if hasattr(m, "model") and not hasattr(m, "backbone_model"):
+        m = m.model
+    if hasattr(m, "backbone_model") and hasattr(m, "depth_decoder"):
+        return m
+    return None
+
+
+def sync_csm_backbone_audio_embedding_from_depth(model: nn.Module) -> int:
+    """Fix ``unsloth/csm-1b`` loads where backbone audio embeddings are random.
+
+    The checkpoint omits ``backbone_model.embed_tokens.embed_audio_tokens.weight`` (it
+    should match ``depth_decoder.model.embed_tokens.weight``). Hugging Face weight tying
+    does not always run after Unsloth's loader, which breaks codec conditioning → gibberish audio.
+
+    Returns 1 if weights were copied, 0 if already tied / shape mismatch / not CSM.
+    """
+    core = resolve_csm_core(model)
+    if core is None:
+        return 0
+    bb_w = core.backbone_model.embed_tokens.embed_audio_tokens.weight
+    dd_w = core.depth_decoder.model.embed_tokens.weight
+    if bb_w.data_ptr() == dd_w.data_ptr():
+        return 0
+    if bb_w.shape != dd_w.shape or bb_w.dtype != dd_w.dtype:
+        return 0
+    with torch.no_grad():
+        bb_w.copy_(dd_w)
+    return 1
+
+
 def patch_csm_create_causal_mask_for_1d_position_ids() -> None:
     """
     ``CsmDepthDecoderModel`` (Transformers 5.5) builds ``position_ids`` as a 1D ``arange(seq)`` and passes it to

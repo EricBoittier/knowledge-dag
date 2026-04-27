@@ -22,6 +22,23 @@ if str(_KD / "voice_ft") not in sys.path:
 from common import load_local_audio_metadata_dir  # noqa: E402
 
 
+def _mono_rms(audio_array) -> float:
+    a = np.asarray(audio_array, dtype=np.float64)
+    if a.size == 0:
+        return 0.0
+    return float(np.sqrt(np.mean(a * a)))
+
+
+def _peak_normalize(audio_array, peak_limit: float) -> np.ndarray:
+    """Scale so max(|x|) == peak_limit; leaves near-silent audio unchanged."""
+    a = np.asarray(audio_array, dtype=np.float32)
+    peak = float(np.max(np.abs(a))) if a.size else 0.0
+    if peak < 1e-12:
+        return a
+    scale = peak_limit / peak
+    return (a * scale).astype(np.float32, copy=False)
+
+
 def _tensor_batch_to_hf_dataset(rows: list[dict]) -> Dataset:
     """Avoid ``Dataset.from_list`` on Python 3.14 (dill / ``Pickler._batch_setitems``)."""
 
@@ -46,10 +63,50 @@ def _tensor_batch_to_hf_dataset(rows: list[dict]) -> Dataset:
     )
 
 
-def load_local_csm_raw(data_dir: Path | str, *, speaker_id: str = "0"):
-    """Load metadata.csv + audio/ at 24 kHz; add ``source`` for CSM."""
+def load_local_csm_raw(
+    data_dir: Path | str,
+    *,
+    speaker_id: str = "0",
+    peak_norm_max: float | None = None,
+    min_rms: float | None = None,
+):
+    """Load metadata.csv + audio/ at 24 kHz; add ``source`` for CSM.
+
+    ``min_rms`` drops clips whose RMS is below the threshold (evaluated on loaded
+    audio before any normalization). ``peak_norm_max`` in (0, 1] scales each clip
+    so max(|sample|) equals that value (typical: 0.99).
+    """
     root = Path(data_dir).resolve()
     ds = load_local_audio_metadata_dir(root, target_sr=24_000)
+
+    if min_rms is not None and min_rms > 0:
+
+        def _loud_enough(ex: dict) -> bool:
+            return _mono_rms(ex["audio"]["array"]) >= min_rms
+
+        ds = ds.filter(_loud_enough)
+        if len(ds) == 0:
+            raise ValueError(
+                "All clips were removed by --min-audio-rms; lower the threshold or check your WAVs."
+            )
+
+    if peak_norm_max is not None:
+        lim = float(peak_norm_max)
+        if not (0.0 < lim <= 1.0):
+            raise ValueError("peak_norm_max must be in (0, 1], e.g. 0.99")
+
+        def _norm_peak(ex: dict) -> dict:
+            arr = _peak_normalize(ex["audio"]["array"], lim)
+            return {
+                **ex,
+                "audio": {
+                    "array": arr,
+                    "sampling_rate": ex["audio"]["sampling_rate"],
+                },
+            }
+
+        ds = ds.map(_norm_peak)
+
     n = len(ds)
     return ds.add_column("source", [speaker_id] * n)
 
