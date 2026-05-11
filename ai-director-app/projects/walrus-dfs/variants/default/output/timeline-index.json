@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-26T09:50:53.507Z",
+  "generated_at": "2026-04-27T14:04:39.893Z",
   "variant_id": "default",
   "sequence_duration_sec": 59.5442,
   "rows": [
@@ -23,23 +23,13 @@
     },
     {
       "start_sec": 0,
-      "end_sec": 7.5974,
-      "lane": 0,
-      "category": "spine",
-      "label": "Penguins: An Introduction [fade_in_12f] [fx:ken_burns_left+film_grain_subtle+taxonomy_rank_label+saturation_plus_8] [lut:soft_contrast_teal]",
-      "detail": "seg_001",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_001_Emperor_Penguins_Nurture_a_Snowball_Dynasties_Preview_BBC_Earth_8d4015d9.normalized.styled.mov",
-      "order": 3
-    },
-    {
-      "start_sec": 0,
       "end_sec": 5,
       "lane": 1,
       "category": "studio_media",
       "label": "Picsum placeholder",
       "detail": "image · ml_1777195686414",
       "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777195686414.still.mov",
-      "order": 4
+      "order": 3
     },
     {
       "start_sec": 0,
@@ -49,7 +39,7 @@
       "label": "Picsum placeholder",
       "detail": "image · ml_1777195689983",
       "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777195689983.still.mov",
-      "order": 5
+      "order": 4
     },
     {
       "start_sec": 0,
@@ -59,7 +49,7 @@
       "label": "Picsum placeholder",
       "detail": "image · ml_1777196187546",
       "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777196187546.still.mov",
-      "order": 6
+      "order": 5
     },
     {
       "start_sec": 3.1407,
@@ -68,17 +58,7 @@
       "category": "caption",
       "label": "Cue 2",
       "detail": "These iconic birds, with their distinctive waddle and sleek underwater prowess,",
-      "order": 7
-    },
-    {
-      "start_sec": 7.5974,
-      "end_sec": 10.7302,
-      "lane": 0,
-      "category": "spine",
-      "label": "Penguin Basic Characteristics [dip_to_color_10f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:soft_contrast_teal]",
-      "detail": "seg_002",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_002_Meet_the_Little_penguin_-_RAZOR_e120d9ae.normalized.styled.mov",
-      "order": 8
+      "order": 6
     },
     {
       "start_sec": 8.1401,
@@ -87,17 +67,7 @@
       "category": "caption",
       "label": "Cue 3",
       "detail": "are truly wonders of the natural world.",
-      "order": 9
-    },
-    {
-      "start_sec": 10.7302,
-      "end_sec": 14.3702,
-      "lane": 0,
-      "category": "spine",
-      "label": "Penguin Species Diversity [directional_wipe_12f] [fx:slow_zoom_in_105+title_lower_third+taxonomy_rank_label+denoise_light] [lut:neutral_doc_rec709]",
-      "detail": "seg_003",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_003_The_Many_Different_Kinds_of_Penguins_Nat_Geo_Kids_Penguins_Playl_1a64a9c6.normalized.styled.mov",
-      "order": 10
+      "order": 7
     },
     {
       "start_sec": 11.2807,
@@ -106,7 +76,7 @@
       "category": "caption",
       "label": "Cue 4",
       "detail": "Though flightless, penguins are master swimmers,",
-      "order": 11
+      "order": 8
     },
     {
       "start_sec": 14.1436,
@@ -115,17 +85,7 @@
       "category": "caption",
       "label": "Cue 5",
       "detail": "perfectly adapted to their aquatic environments.",
-      "order": 12
-    },
-    {
-      "start_sec": 14.3702,
-      "end_sec": 18.808,
-      "lane": 0,
-      "category": "spine",
-      "label": "Emperor Penguin: King of the Ice [push_right_10f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:soft_contrast_teal]",
-      "detail": "seg_004",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_004_Atlantic_ice_Penguins_life._youtube_naturelovers_atlantic_pengui_8b9af885.normalized.styled.mov",
-      "order": 13
+      "order": 9
     },
     {
       "start_sec": 16.857,
@@ -134,17 +94,7 @@
       "category": "caption",
       "label": "Cue 6",
       "detail": "Their torpedo-shaped bodies and powerful flippers make them incredibly agile in the",
-      "order": 14
-    },
-    {
-      "start_sec": 18.808,
-      "end_sec": 22.6059,
-      "lane": 0,
-      "category": "spine",
-      "label": "Adelie Penguin: Antarctic Resident [blur_dissolve_8f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:neutral_doc_rec709]",
-      "detail": "seg_005",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_005_Playful_baboon_performs_acrobatic_dive_into_the_water_9979d07b.normalized.styled.mov",
-      "order": 15
+      "order": 10
     },
     {
       "start_sec": 21.9846,
@@ -153,7 +103,7 @@
       "category": "caption",
       "label": "Cue 7",
       "detail": "water.",
-      "order": 16
+      "order": 11
     },
     {
       "start_sec": 22.5614,
@@ -162,17 +112,7 @@
       "category": "caption",
       "label": "Cue 8",
       "detail": "From the colossal Emperor to the diminutive Little Blue,",
-      "order": 17
-    },
-    {
-      "start_sec": 22.6059,
-      "end_sec": 26.9515,
-      "lane": 0,
-      "category": "spine",
-      "label": "Penguin Adaptations for Survival [luma_fade_12f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:natural_green_lift]",
-      "detail": "seg_007",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_007_penguin_adaptations_-_year_2_f81a39eb.normalized.styled.mov",
-      "order": 18
+      "order": 12
     },
     {
       "start_sec": 26.5567,
@@ -181,17 +121,7 @@
       "category": "caption",
       "label": "Cue 9",
       "detail": "there are 18 distinct species of penguins,",
-      "order": 19
-    },
-    {
-      "start_sec": 26.9515,
-      "end_sec": 31.2448,
-      "lane": 0,
-      "category": "spine",
-      "label": "Penguin Habitats & Distribution [cross_dissolve_8f] [fx:push_in_center+clarity_soft+taxonomy_rank_label+highlight_rolloff] [lut:high_clarity_newsreel]",
-      "detail": "seg_008",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_008_Why_are_there_no_penguins_in_Iceland_b904e63a.normalized.styled.mov",
-      "order": 20
+      "order": 13
     },
     {
       "start_sec": 29.6973,
@@ -200,17 +130,7 @@
       "category": "caption",
       "label": "Cue 10",
       "detail": "each with unique characteristics and habitats across the Southern Hemisphere.",
-      "order": 21
-    },
-    {
-      "start_sec": 31.2448,
-      "end_sec": 37.1058,
-      "lane": 0,
-      "category": "spine",
-      "label": "Threats to Penguin Populations [dip_to_color_10f] [fx:pan_down_soft+clarity_medium+title_lower_third+black_point_plus_3] [lut:warm_film_stock]",
-      "detail": "seg_009",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_009_Penguin_Threats_Predators_Pets_Animals_Facts_2109326f.normalized.styled.mov",
-      "order": 22
+      "order": 14
     },
     {
       "start_sec": 34.1199,
@@ -219,17 +139,7 @@
       "category": "caption",
       "label": "Cue 11",
       "detail": "The Emperor Penguin, the largest of all, stands majestically on the Antarctic ice,",
-      "order": 23
-    },
-    {
-      "start_sec": 37.1058,
-      "end_sec": 41.8496,
-      "lane": 0,
-      "category": "spine",
-      "label": "Conservation Efforts for Penguins [dip_to_color_10f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:high_clarity_newsreel]",
-      "detail": "seg_010",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_010__A_Place_for_Penguins_-_Offical_2019_WCFF_Trailer_27485d0c.normalized.styled.mov",
-      "order": 24
+      "order": 15
     },
     {
       "start_sec": 40.1234,
@@ -238,17 +148,7 @@
       "category": "caption",
       "label": "Cue 12",
       "detail": "enduring the harshest conditions to raise its young.",
-      "order": 25
-    },
-    {
-      "start_sec": 41.8496,
-      "end_sec": 49.4257,
-      "lane": 0,
-      "category": "spine",
-      "label": "Climate Change & Ice Loss [film_flash_6f] [fx:micro_shake_stabilized+contrast_pop+taxonomy_rank_label+shadow_lift_8] [lut:high_clarity_newsreel]",
-      "detail": "seg_011",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_011_Arctic_Connected_Sea_ice_loss_and_climate_change_7af3bb05.normalized.styled.mov",
-      "order": 26
+      "order": 16
     },
     {
       "start_sec": 43.6914,
@@ -257,7 +157,7 @@
       "category": "caption",
       "label": "Cue 13",
       "detail": "The Adelie Penguin, a common sight in Antarctica,",
-      "order": 27
+      "order": 17
     },
     {
       "start_sec": 47.4089,
@@ -266,17 +166,7 @@
       "category": "caption",
       "label": "Cue 14",
       "detail": "is known for its bold personality and distinctive white-ringed eyes.",
-      "order": 28
-    },
-    {
-      "start_sec": 49.4257,
-      "end_sec": 52.5222,
-      "lane": 0,
-      "category": "spine",
-      "label": "Overfishing & Food Scarcity [film_flash_6f] [fx:micro_shake_stabilized+contrast_pop+taxonomy_rank_label+shadow_lift_8] [lut:neutral_doc_rec709]",
-      "detail": "seg_012",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_012_Chinas_Overfishing_Crisis_How_One_Fleet_Is_Devastating_the_World_8df9e758.normalized.styled.mov",
-      "order": 29
+      "order": 18
     },
     {
       "start_sec": 51.8315,
@@ -285,17 +175,7 @@
       "category": "caption",
       "label": "Cue 15",
       "detail": "Defying typical penguin habitats, the Galapagos Penguin thrives near the equator,",
-      "order": 30
-    },
-    {
-      "start_sec": 52.5222,
-      "end_sec": 59.5442,
-      "lane": 0,
-      "category": "spine",
-      "label": "Penguin Reproduction & Life Cycle [push_right_10f] [fx:ken_burns_left+film_grain_subtle+taxonomy_rank_label+saturation_plus_8] [lut:neutral_doc_rec709]",
-      "detail": "seg_013",
-      "source": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_013_Penguin_Life_Cycle_for_Kids_Learn_About_a_Penguin_s_Life_Fun_Ani_b512f6da.normalized.styled.mov",
-      "order": 31
+      "order": 19
     },
     {
       "start_sec": 56.8309,
@@ -304,7 +184,7 @@
       "category": "caption",
       "label": "Cue 16",
       "detail": "a testament to their incredible adaptability.",
-      "order": 32
+      "order": 20
     }
   ]
 }

@@ -11,9 +11,15 @@
       <project name="AutoTimeline">
         <sequence format="rFormat" tcStart="0s" tcFormat="NDF">
           <spine>
-            <asset-clip name="Shot 1" ref="r1" offset="0/24000s" start="0/24000s" duration="527784/24000s" />
-            <asset-clip name="Shot 2" ref="r2" offset="527784/24000s" start="4800/24000s" duration="232680/24000s" />
-            <asset-clip name="Shot 3" ref="r3" offset="760464/24000s" start="9600/24000s" duration="38520/24000s" />
+            <asset-clip name="Shot 1" ref="r1" offset="0/24000s" start="0/24000s" duration="527784/24000s">
+              <marker start="0/24000s" duration="527784/24000s" value="Shot 1" />
+            </asset-clip>
+            <asset-clip name="Shot 2" ref="r2" offset="527784/24000s" start="4800/24000s" duration="232680/24000s">
+              <marker start="4800/24000s" duration="232680/24000s" value="Shot 2" />
+            </asset-clip>
+            <asset-clip name="Shot 3" ref="r3" offset="760464/24000s" start="9600/24000s" duration="38520/24000s">
+              <marker start="9600/24000s" duration="38520/24000s" value="Shot 3" />
+            </asset-clip>
           </spine>
         </sequence>
       </project>

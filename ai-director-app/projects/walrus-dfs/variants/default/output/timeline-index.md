@@ -1,5 +1,5 @@
 # Timeline index
-Generated: 2026-04-26T09:50:53.507Z
+Generated: 2026-04-27T14:04:39.893Z
 Variant: **default**
 Spine (main program) length: **59.544 s**
 Sorted by **start time**, then **lane**.
@@ -7,33 +7,21 @@ Sorted by **start time**, then **lane**.
 |---|---:|---:|---:|---:|---|---|---|---|
 | 1 | 0.000 | 3.141 | 3.141 | -2 | caption | Cue 1 | Welcome to the captivating world of penguins! |  |
 | 2 | 0.000 | 59.544 | 59.544 | -1 | narration | Narration |  | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/narration.wav |
-| 3 | 0.000 | 7.597 | 7.597 | 0 | spine | Penguins: An Introduction [fade_in_12f] [fx:ken_burns_left+film_grain_subtle+taxonomy_rank_label+saturation_plus_8] [lut:soft_contrast_teal] | seg_001 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_001_Emperor_Penguins_Nurture_a_Snowball_Dynasties_Preview_BBC_Earth_8d4015d9.normalized.styled.mov |
-| 4 | 0.000 | 5.000 | 5.000 | 1 | studio_media | Picsum placeholder | image · ml_1777195686414 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777195686414.still.mov |
-| 5 | 0.000 | 5.000 | 5.000 | 1 | studio_media | Picsum placeholder | image · ml_1777195689983 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777195689983.still.mov |
-| 6 | 0.000 | 5.000 | 5.000 | 1 | studio_media | Picsum placeholder | image · ml_1777196187546 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777196187546.still.mov |
-| 7 | 3.141 | 8.140 | 4.999 | -2 | caption | Cue 2 | These iconic birds, with their distinctive waddle and sleek underwater prowess, |  |
-| 8 | 7.597 | 10.730 | 3.133 | 0 | spine | Penguin Basic Characteristics [dip_to_color_10f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:soft_contrast_teal] | seg_002 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_002_Meet_the_Little_penguin_-_RAZOR_e120d9ae.normalized.styled.mov |
-| 9 | 8.140 | 11.281 | 3.141 | -2 | caption | Cue 3 | are truly wonders of the natural world. |  |
-| 10 | 10.730 | 14.370 | 3.640 | 0 | spine | Penguin Species Diversity [directional_wipe_12f] [fx:slow_zoom_in_105+title_lower_third+taxonomy_rank_label+denoise_light] [lut:neutral_doc_rec709] | seg_003 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_003_The_Many_Different_Kinds_of_Penguins_Nat_Geo_Kids_Penguins_Playl_1a64a9c6.normalized.styled.mov |
-| 11 | 11.281 | 14.144 | 2.863 | -2 | caption | Cue 4 | Though flightless, penguins are master swimmers, |  |
-| 12 | 14.144 | 16.857 | 2.713 | -2 | caption | Cue 5 | perfectly adapted to their aquatic environments. |  |
-| 13 | 14.370 | 18.808 | 4.438 | 0 | spine | Emperor Penguin: King of the Ice [push_right_10f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:soft_contrast_teal] | seg_004 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_004_Atlantic_ice_Penguins_life._youtube_naturelovers_atlantic_pengui_8b9af885.normalized.styled.mov |
-| 14 | 16.857 | 21.985 | 5.128 | -2 | caption | Cue 6 | Their torpedo-shaped bodies and powerful flippers make them incredibly agile in the |  |
-| 15 | 18.808 | 22.606 | 3.798 | 0 | spine | Adelie Penguin: Antarctic Resident [blur_dissolve_8f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:neutral_doc_rec709] | seg_005 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_005_Playful_baboon_performs_acrobatic_dive_into_the_water_9979d07b.normalized.styled.mov |
-| 16 | 21.985 | 22.561 | 0.577 | -2 | caption | Cue 7 | water. |  |
-| 17 | 22.561 | 26.557 | 3.995 | -2 | caption | Cue 8 | From the colossal Emperor to the diminutive Little Blue, |  |
-| 18 | 22.606 | 26.951 | 4.346 | 0 | spine | Penguin Adaptations for Survival [luma_fade_12f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:natural_green_lift] | seg_007 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_007_penguin_adaptations_-_year_2_f81a39eb.normalized.styled.mov |
-| 19 | 26.557 | 29.697 | 3.141 | -2 | caption | Cue 9 | there are 18 distinct species of penguins, |  |
-| 20 | 26.951 | 31.245 | 4.293 | 0 | spine | Penguin Habitats & Distribution [cross_dissolve_8f] [fx:push_in_center+clarity_soft+taxonomy_rank_label+highlight_rolloff] [lut:high_clarity_newsreel] | seg_008 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_008_Why_are_there_no_penguins_in_Iceland_b904e63a.normalized.styled.mov |
-| 21 | 29.697 | 34.120 | 4.423 | -2 | caption | Cue 10 | each with unique characteristics and habitats across the Southern Hemisphere. |  |
-| 22 | 31.245 | 37.106 | 5.861 | 0 | spine | Threats to Penguin Populations [dip_to_color_10f] [fx:pan_down_soft+clarity_medium+title_lower_third+black_point_plus_3] [lut:warm_film_stock] | seg_009 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_009_Penguin_Threats_Predators_Pets_Animals_Facts_2109326f.normalized.styled.mov |
-| 23 | 34.120 | 40.123 | 6.003 | -2 | caption | Cue 11 | The Emperor Penguin, the largest of all, stands majestically on the Antarctic ice, |  |
-| 24 | 37.106 | 41.850 | 4.744 | 0 | spine | Conservation Efforts for Penguins [dip_to_color_10f] [fx:ken_burns_right+title_lower_third+warmth_minus_5+clarity_soft] [lut:high_clarity_newsreel] | seg_010 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_010__A_Place_for_Penguins_-_Offical_2019_WCFF_Trailer_27485d0c.normalized.styled.mov |
-| 25 | 40.123 | 43.691 | 3.568 | -2 | caption | Cue 12 | enduring the harshest conditions to raise its young. |  |
-| 26 | 41.850 | 49.426 | 7.576 | 0 | spine | Climate Change & Ice Loss [film_flash_6f] [fx:micro_shake_stabilized+contrast_pop+taxonomy_rank_label+shadow_lift_8] [lut:high_clarity_newsreel] | seg_011 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_011_Arctic_Connected_Sea_ice_loss_and_climate_change_7af3bb05.normalized.styled.mov |
-| 27 | 43.691 | 47.409 | 3.718 | -2 | caption | Cue 13 | The Adelie Penguin, a common sight in Antarctica, |  |
-| 28 | 47.409 | 51.831 | 4.423 | -2 | caption | Cue 14 | is known for its bold personality and distinctive white-ringed eyes. |  |
-| 29 | 49.426 | 52.522 | 3.096 | 0 | spine | Overfishing & Food Scarcity [film_flash_6f] [fx:micro_shake_stabilized+contrast_pop+taxonomy_rank_label+shadow_lift_8] [lut:neutral_doc_rec709] | seg_012 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_012_Chinas_Overfishing_Crisis_How_One_Fleet_Is_Devastating_the_World_8df9e758.normalized.styled.mov |
-| 30 | 51.831 | 56.831 | 4.999 | -2 | caption | Cue 15 | Defying typical penguin habitats, the Galapagos Penguin thrives near the equator, |  |
-| 31 | 52.522 | 59.544 | 7.022 | 0 | spine | Penguin Reproduction & Life Cycle [push_right_10f] [fx:ken_burns_left+film_grain_subtle+taxonomy_rank_label+saturation_plus_8] [lut:neutral_doc_rec709] | seg_013 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/seg_013_Penguin_Life_Cycle_for_Kids_Learn_About_a_Penguin_s_Life_Fun_Ani_b512f6da.normalized.styled.mov |
-| 32 | 56.831 | 59.544 | 2.713 | -2 | caption | Cue 16 | a testament to their incredible adaptability. |  |
+| 3 | 0.000 | 5.000 | 5.000 | 1 | studio_media | Picsum placeholder | image · ml_1777195686414 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777195686414.still.mov |
+| 4 | 0.000 | 5.000 | 5.000 | 1 | studio_media | Picsum placeholder | image · ml_1777195689983 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777195689983.still.mov |
+| 5 | 0.000 | 5.000 | 5.000 | 1 | studio_media | Picsum placeholder | image · ml_1777196187546 | /home/ericb/Documents/knowledge-dag/ai-director-app/projects/walrus-dfs/variants/default/output/processed/overlay_ml_1777196187546.still.mov |
+| 6 | 3.141 | 8.140 | 4.999 | -2 | caption | Cue 2 | These iconic birds, with their distinctive waddle and sleek underwater prowess, |  |
+| 7 | 8.140 | 11.281 | 3.141 | -2 | caption | Cue 3 | are truly wonders of the natural world. |  |
+| 8 | 11.281 | 14.144 | 2.863 | -2 | caption | Cue 4 | Though flightless, penguins are master swimmers, |  |
+| 9 | 14.144 | 16.857 | 2.713 | -2 | caption | Cue 5 | perfectly adapted to their aquatic environments. |  |
+| 10 | 16.857 | 21.985 | 5.128 | -2 | caption | Cue 6 | Their torpedo-shaped bodies and powerful flippers make them incredibly agile in the |  |
+| 11 | 21.985 | 22.561 | 0.577 | -2 | caption | Cue 7 | water. |  |
+| 12 | 22.561 | 26.557 | 3.995 | -2 | caption | Cue 8 | From the colossal Emperor to the diminutive Little Blue, |  |
+| 13 | 26.557 | 29.697 | 3.141 | -2 | caption | Cue 9 | there are 18 distinct species of penguins, |  |
+| 14 | 29.697 | 34.120 | 4.423 | -2 | caption | Cue 10 | each with unique characteristics and habitats across the Southern Hemisphere. |  |
+| 15 | 34.120 | 40.123 | 6.003 | -2 | caption | Cue 11 | The Emperor Penguin, the largest of all, stands majestically on the Antarctic ice, |  |
+| 16 | 40.123 | 43.691 | 3.568 | -2 | caption | Cue 12 | enduring the harshest conditions to raise its young. |  |
+| 17 | 43.691 | 47.409 | 3.718 | -2 | caption | Cue 13 | The Adelie Penguin, a common sight in Antarctica, |  |
+| 18 | 47.409 | 51.831 | 4.423 | -2 | caption | Cue 14 | is known for its bold personality and distinctive white-ringed eyes. |  |
+| 19 | 51.831 | 56.831 | 4.999 | -2 | caption | Cue 15 | Defying typical penguin habitats, the Galapagos Penguin thrives near the equator, |  |
+| 20 | 56.831 | 59.544 | 2.713 | -2 | caption | Cue 16 | a testament to their incredible adaptability. |  |
