@@ -1,6 +1,6 @@
 {
   "paths": {
-    "input_dir": "./input",
+    "input_dir": "/run/media/ericb/New Volume/Eric/Videos",
     "output_dir": "./output",
     "normalized_dir": "./output/normalized",
     "manifest_path": "./output/normalized/manifest.json",
@@ -24,6 +24,23 @@
     "video_preset": 6,
     "audio_codec": "pcm_s16le"
   },
+  "broll_analyzer": {
+    "enabled": false,
+    "model_name": "Salesforce/blip-image-captioning-base",
+    "device": "cpu",
+    "sample_interval_sec": 2.0,
+    "window_duration_sec": 4.0,
+    "max_windows": 5,
+    "min_window_score": 0.35,
+    "max_new_tokens": 32
+  },
+  "gemini_broll_judge": {
+    "enabled": false,
+    "model": "gemini-1.5-flash",
+    "min_fit_score": 0.55,
+    "max_windows_in_prompt": 8,
+    "apply_to_timeline": true
+  },
   "timeline": {
     "name": "AutoTimeline",
     "width": 1920,
@@ -35,9 +52,83 @@
     "include_outro": false,
     "outro_path": "",
     "include_music": false,
+    "use_broll_top_window": false,
+    "fcpxml_relative_media_src": false,
     "music_path": "",
     "music_gain_db": -18.0,
     "music_fade_in_s": 1.0,
     "music_fade_out_s": 1.0
+  },
+  "overlays": {
+    "subtitle_profile": "default",
+    "max_chars_per_line": 36,
+    "max_lines_per_cue": 2,
+    "safe_margin": 64,
+    "overlay_width": 512,
+    "overlay_height": 512,
+    "anchor": "bottom_left",
+    "fusion_center_x": 0.5,
+    "fusion_center_y": 0.15,
+    "image_asset_dir": "./input/assets/obrainrot/trump",
+    "keyword_map": {},
+    "style_theme_rules": [
+      {
+        "profile": "shorts",
+        "keywords": [
+          "title_lower_third",
+          "taxonomy_rank_label",
+          "push",
+          "clarity"
+        ]
+      },
+      {
+        "profile": "tiktok",
+        "keywords": [
+          "film",
+          "vignette",
+          "flash",
+          "warm",
+          "teal"
+        ]
+      },
+      {
+        "profile": "dialogue",
+        "keywords": [
+          "audio_note",
+          "dialogue",
+          "voice",
+          "narration"
+        ]
+      },
+      {
+        "profile": "default",
+        "keywords": [
+          "neutral",
+          "doc",
+          "cross_dissolve"
+        ]
+      }
+    ],
+    "dialogue": {
+      "model_name": "unsloth/csm-1b",
+      "max_words_per_chunk": 5,
+      "fast_max_new_tokens": 96,
+      "output_wav": "./output/overlays/dialogue_mix.wav",
+      "work_dir": "./output/overlays/dialogue_turns",
+      "checkpoint_cycle": [
+        "../voice_tts/sesame_csm_lora_ww",
+        "../voice_tts/sesame_csm_lora_ef",
+        "../voice_tts/sesame_csm_lora"
+      ]
+    },
+    "text": {
+      "font_color": "white",
+      "box_color": "black@0.45"
+    },
+    "paths": {
+      "output_dir": "./output/overlays",
+      "preview_output": "./output/overlays/preview_overlay.mp4",
+      "prebake_dir": "./output/prebaked"
+    }
   }
 }

@@ -39,6 +39,22 @@ npm run build
 node ./dist/core/src/cli/build-project.js --project ./projects/walrus-dfs --from-stage source --to-stage validate --dry-run
 ```
 
+## CLI env runner (concept -> graph -> script -> narration -> video)
+
+Use the env-driven wrapper to run end-to-end with cheap voices by default.
+
+```bash
+cd ai-director-app
+cp .env.video.example .env.video
+# Edit .env.video (PROJECT_DIR, CONCEPT, stage range, etc.)
+./scripts/build_project_env.sh
+```
+
+Notes:
+- When `CONCEPT` is set, `scripts/bootstrap_dag_from_concept.py` generates `dag.project.json`.
+- `CHEAP_VOICES=1` exports `VOICEOVER_ENGINE=espeak` automatically.
+- Default stage range is `source -> render`.
+
 Backward-compatible stage aliases are accepted during migration (`media` -> `normalize`, `subtitle` -> `subtitles`, `timeline` -> `export`).
 
 ## Canonical Project Artifacts
@@ -58,6 +74,22 @@ Core outputs:
 - `projects/walrus-dfs/output/timeline_davinci_resolve.fcpxml`
 - `projects/walrus-dfs/output/import-report.md`
 - `projects/walrus-dfs/output/crop-validation.json`
+
+## Local B-roll analysis
+
+`normalize` can run a local image-to-text pass on normalized media and persist ranked windows in
+`media-manifest.json` (`broll_analysis`, `broll_windows`, `broll_top_window`, `broll_markers`).
+
+Enable and tune with `config/pipeline.config.json`:
+
+- `broll_analyzer.enabled`
+- `broll_analyzer.model_name`
+- `broll_analyzer.device`
+- `broll_analyzer.sample_interval_sec`
+- `broll_analyzer.window_duration_sec`
+- `broll_analyzer.max_windows`
+- `broll_analyzer.min_window_score`
+- `timeline.use_broll_top_window` (use best window as timeline trim)
 
 ## Crop Validation
 

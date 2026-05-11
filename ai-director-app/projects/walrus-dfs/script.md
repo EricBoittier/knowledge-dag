@@ -1,43 +1,49 @@
 # Walrus DFS Script
 
 ## seg_001
-Penguins: An Introduction: This segment introduces a core idea that supports the overall storyline. Step 1 of 14.
+Introduction to Penguins: This segment introduces a core idea that supports the overall storyline. Step 1 of 16.
 
 ## seg_002
-Penguin Basic Characteristics: This step narrows the focus and adds important context. Step 2 of 14.
+Penguin Characteristics: This segment introduces a core idea that supports the overall storyline. Step 2 of 16.
 
 ## seg_003
-Penguin Species Diversity: This level highlights details that make the topic easier to understand. Step 3 of 14.
+Aquatic Adaptations: This segment introduces a core idea that supports the overall storyline. Step 3 of 16.
 
 ## seg_004
-Emperor Penguin: King of the Ice: This step narrows the focus and adds important context. Step 4 of 14.
+Penguin Diet: This segment introduces a core idea that supports the overall storyline. Step 4 of 16.
 
 ## seg_005
-Adelie Penguin: Antarctic Resident: This level highlights details that make the topic easier to understand. Step 5 of 14.
+Hunting Strategies: This step narrows the focus and adds important context. Step 5 of 16.
 
 ## seg_006
-Galapagos Penguin: Equatorial Survivor: This step narrows the focus and adds important context. Step 6 of 14.
+Flightless Birds: This step narrows the focus and adds important context. Step 6 of 16.
 
 ## seg_007
-Penguin Adaptations for Survival: This step narrows the focus and adds important context. Step 7 of 14.
+Penguin Habitats: This step narrows the focus and adds important context. Step 7 of 16.
 
 ## seg_008
-Penguin Habitats & Distribution: This level highlights details that make the topic easier to understand. Step 8 of 14.
+Antarctic Penguins: This segment introduces a core idea that supports the overall storyline. Step 8 of 16.
 
 ## seg_009
-Threats to Penguin Populations: This segment introduces a core idea that supports the overall storyline. Step 9 of 14.
+Emperor Penguin: This step narrows the focus and adds important context. Step 9 of 16.
 
 ## seg_010
-Conservation Efforts for Penguins: This segment introduces a core idea that supports the overall storyline. Step 10 of 14.
+Adélie Penguin: This level highlights details that make the topic easier to understand. Step 10 of 16.
 
 ## seg_011
-Climate Change & Ice Loss: This level highlights details that make the topic easier to understand. Step 11 of 14.
+Temperate Penguins: This level highlights details that make the topic easier to understand. Step 11 of 16.
 
 ## seg_012
-Overfishing & Food Scarcity: This level highlights details that make the topic easier to understand. Step 12 of 14.
+Little Blue Penguin: This segment introduces a core idea that supports the overall storyline. Step 12 of 16.
 
 ## seg_013
-Penguin Reproduction & Life Cycle: This segment introduces a core idea that supports the overall storyline. Step 13 of 14.
+Penguin Species Overview: This step narrows the focus and adds important context. Step 13 of 16.
 
 ## seg_014
-Penguin Diet & Hunting Strategies: This level highlights details that make the topic easier to understand. Step 14 of 14.
+Penguin Conservation: This step narrows the focus and adds important context. Step 14 of 16.
+
+## seg_015
+Penguin Reproduction: This level highlights details that make the topic easier to understand. Step 15 of 16.
+
+## seg_016
+Penguin Chicks: This level highlights details that make the topic easier to understand. Step 16 of 16.

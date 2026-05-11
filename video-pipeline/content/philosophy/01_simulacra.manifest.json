@@ -1,0 +1,681 @@
+{
+  "input_dir": "/home/ericb/Documents/knowledge-dag/video-pipeline/content/philosophy",
+  "output_dir": "/home/ericb/Documents/knowledge-dag/video-pipeline/content/philosophy",
+  "entries": [
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 6.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 1",
+        "in_seconds": 0.0,
+        "out_seconds": 6.0
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 4.56,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 2",
+        "in_seconds": 0.0,
+        "out_seconds": 4.56
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 0.96,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 3",
+        "in_seconds": 0.0,
+        "out_seconds": 0.96
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 4.8,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 4",
+        "in_seconds": 0.0,
+        "out_seconds": 4.8
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 5.28,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 5",
+        "in_seconds": 0.0,
+        "out_seconds": 5.28
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 7.68,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 6",
+        "in_seconds": 0.0,
+        "out_seconds": 7.68
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 1.44,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 7",
+        "in_seconds": 0.0,
+        "out_seconds": 1.44
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 2.88,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 8",
+        "in_seconds": 0.0,
+        "out_seconds": 2.88
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 1.6,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 9",
+        "in_seconds": 0.0,
+        "out_seconds": 1.6
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 0.4,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 10",
+        "in_seconds": 0.0,
+        "out_seconds": 0.4
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 2.4,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 11",
+        "in_seconds": 0.0,
+        "out_seconds": 2.4
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 3.36,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 12",
+        "in_seconds": 0.0,
+        "out_seconds": 3.36
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 4.72,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 13",
+        "in_seconds": 0.0,
+        "out_seconds": 4.72
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 2.4,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 14",
+        "in_seconds": 0.0,
+        "out_seconds": 2.4
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 7.68,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 15",
+        "in_seconds": 0.0,
+        "out_seconds": 7.68
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 4.24,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 16",
+        "in_seconds": 0.0,
+        "out_seconds": 4.24
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 4.0,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 17",
+        "in_seconds": 0.0,
+        "out_seconds": 4.0
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 0.88,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 18",
+        "in_seconds": 0.0,
+        "out_seconds": 0.88
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 7.68,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 19",
+        "in_seconds": 0.0,
+        "out_seconds": 7.68
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 2.88,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 20",
+        "in_seconds": 0.0,
+        "out_seconds": 2.88
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 6.56,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 21",
+        "in_seconds": 0.0,
+        "out_seconds": 6.56
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 2.72,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 22",
+        "in_seconds": 0.0,
+        "out_seconds": 2.72
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 2.88,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 23",
+        "in_seconds": 0.0,
+        "out_seconds": 2.88
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 0.24,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 24",
+        "in_seconds": 0.0,
+        "out_seconds": 0.24
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 2.56,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 25",
+        "in_seconds": 0.0,
+        "out_seconds": 2.56
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 5.12,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 26",
+        "in_seconds": 0.0,
+        "out_seconds": 5.12
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 3.12,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 27",
+        "in_seconds": 0.0,
+        "out_seconds": 3.12
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 2.16,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 28",
+        "in_seconds": 0.0,
+        "out_seconds": 2.16
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 7.68,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 29",
+        "in_seconds": 0.0,
+        "out_seconds": 7.68
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 2.72,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 30",
+        "in_seconds": 0.0,
+        "out_seconds": 2.72
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 2.88,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 31",
+        "in_seconds": 0.0,
+        "out_seconds": 2.88
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 1.76,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 32",
+        "in_seconds": 0.0,
+        "out_seconds": 1.76
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 1.2,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 33",
+        "in_seconds": 0.0,
+        "out_seconds": 1.2
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 1.68,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 34",
+        "in_seconds": 0.0,
+        "out_seconds": 1.68
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 5.44,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 35",
+        "in_seconds": 0.0,
+        "out_seconds": 5.44
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 4.32,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 36",
+        "in_seconds": 0.0,
+        "out_seconds": 4.32
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 1.92,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 37",
+        "in_seconds": 0.0,
+        "out_seconds": 1.92
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 7.44,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 38",
+        "in_seconds": 0.0,
+        "out_seconds": 7.44
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 3.52,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 39",
+        "in_seconds": 0.0,
+        "out_seconds": 3.52
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 0.56,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 40",
+        "in_seconds": 0.0,
+        "out_seconds": 0.56
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "source_label": "seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+      "duration_seconds": 5.6,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 41",
+        "in_seconds": 0.0,
+        "out_seconds": 5.6
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "source_label": "seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+      "duration_seconds": 3.28,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 42",
+        "in_seconds": 0.0,
+        "out_seconds": 3.28
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "source_label": "seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+      "duration_seconds": 4.24,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 43",
+        "in_seconds": 0.0,
+        "out_seconds": 4.24
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "source_label": "seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+      "duration_seconds": 1.28,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 44",
+        "in_seconds": 0.0,
+        "out_seconds": 1.28
+      },
+      "errors": []
+    },
+    {
+      "source": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "normalized": "/home/ericb/Documents/knowledge-dag/video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "source_label": "seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov",
+      "duration_seconds": 2.32,
+      "video_codec": "h264",
+      "audio_codec": "aac",
+      "timeline": {
+        "enabled": true,
+        "label": "Philosophy b-roll 45",
+        "in_seconds": 0.0,
+        "out_seconds": 2.32
+      },
+      "errors": []
+    }
+  ]
+}

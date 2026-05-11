@@ -21,8 +21,16 @@ client/img
 *.ogg
 *.wav
 *.webm
+*.log
+# Image files
+*.png
 
 # Local dataset / tooling outputs (keep paths; do not commit blobs)
 srt_dataset_out/
 outputs_csm/
 unsloth_compiled_cache/
+
+# Generated media/project outputs
+output/
+video-pipeline/output/
+ai-director-app/projects/*/output/

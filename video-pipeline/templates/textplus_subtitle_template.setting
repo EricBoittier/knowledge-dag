@@ -1,0 +1,49 @@
+{
+	Tools = ordered() {
+		Background1 = Background {
+			Inputs = {
+				GlobalOut = Input { Value = 239 },
+				Width = Input { Value = 1920 },
+				Height = Input { Value = 1080 },
+				TopLeftRed = Input { Value = 0 },
+				TopLeftGreen = Input { Value = 0 },
+				TopLeftBlue = Input { Value = 0 },
+				TopLeftAlpha = Input { Value = 0 }
+			},
+			ViewInfo = OperatorInfo { Pos = { -110, 0 } }
+		},
+		Text1 = TextPlus {
+			Inputs = {
+				Input = Input { SourceOp = "Background1", Source = "Output" },
+				StyledText = Input { Value = "__TEXT__" },
+				Center = Input { Value = { __CENTER_X__, __CENTER_Y__ } },
+				Size = Input { Value = __SIZE__ },
+				Red1 = Input { Value = __FILL_R__ },
+				Green1 = Input { Value = __FILL_G__ },
+				Blue1 = Input { Value = __FILL_B__ },
+				Alpha1 = Input { Value = __FILL_A__ },
+				Enabled2 = Input { Value = 1 },
+				Type2 = Input { Value = 1 },
+				Red2 = Input { Value = __STROKE_R__ },
+				Green2 = Input { Value = __STROKE_G__ },
+				Blue2 = Input { Value = __STROKE_B__ },
+				Alpha2 = Input { Value = __STROKE_A__ },
+				Thickness2 = Input { Value = __STROKE_THICKNESS__ },
+				Enabled3 = Input { Value = 1 },
+				Type3 = Input { Value = 4 },
+				Red3 = Input { Value = __BG_R__ },
+				Green3 = Input { Value = __BG_G__ },
+				Blue3 = Input { Value = __BG_B__ },
+				Alpha3 = Input { Value = __BG_A__ },
+				Thickness3 = Input { Value = __BG_THICKNESS__ }
+			},
+			ViewInfo = OperatorInfo { Pos = { 0, 0 } }
+		},
+		MediaOut1 = MediaOut {
+			Inputs = {
+				Input = Input { SourceOp = "Text1", Source = "Output" }
+			},
+			ViewInfo = OperatorInfo { Pos = { 110, 0 } }
+		}
+	}
+}

@@ -1,0 +1,138 @@
+{
+  "generated_at": "2026-05-11T10:46:36.883927+00:00",
+  "entries": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Penguin",
+      "source": "wikimedia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/75/%281%29Little_Penguin-4.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_title": "(1)Little Penguin-4.jpg",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/images/seg_001_Penguin.jpg",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/stills/seg_001_Penguin.still.mov",
+      "duration_seconds": 5.0,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguin",
+        "in_seconds": 0.0,
+        "out_seconds": 5.0
+      },
+      "wiki_image": {
+        "creator": "Sardaka",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Sardaka",
+        "mime_type": "image/jpeg"
+      }
+    },
+    {
+      "segment_id": "seg_002",
+      "concept": "Etymology",
+      "source": "wikimedia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/African_penguin_side_profile.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_title": "African penguin side profile.jpg",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/images/seg_002_Etymology.jpg",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/stills/seg_002_Etymology.still.mov",
+      "duration_seconds": 5.0,
+      "timeline": {
+        "enabled": true,
+        "label": "Etymology",
+        "in_seconds": 0.0,
+        "out_seconds": 5.0
+      },
+      "wiki_image": {
+        "creator": "Bl1zz4rd-editor",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Bl1zz4rd-editor",
+        "mime_type": "image/jpeg"
+      }
+    },
+    {
+      "segment_id": "seg_003",
+      "concept": "Systematics and evolution",
+      "source": "wikimedia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2a/AntarcticaSummer.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_title": "AntarcticaSummer.jpg",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/images/seg_003_Systematics_and_evolution.jpg",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/stills/seg_003_Systematics_and_evolution.still.mov",
+      "duration_seconds": 5.0,
+      "timeline": {
+        "enabled": true,
+        "label": "Systematics and evolution",
+        "in_seconds": 0.0,
+        "out_seconds": 5.0
+      },
+      "wiki_image": {
+        "creator": "Roux",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Roux",
+        "mime_type": "image/jpeg"
+      }
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Anatomy and physiology",
+      "source": "wikimedia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Aptenodytes_forsteri_-Snow_Hill_Island%2C_Antarctica_-adults_and_juvenile-8.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_title": "Aptenodytes forsteri -Snow Hill Island, Antarctica -adults and juvenile-8.jpg",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/images/seg_004_Anatomy_and_physiology.jpg",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/stills/seg_004_Anatomy_and_physiology.still.mov",
+      "duration_seconds": 5.0,
+      "timeline": {
+        "enabled": true,
+        "label": "Anatomy and physiology",
+        "in_seconds": 0.0,
+        "out_seconds": 5.0
+      },
+      "wiki_image": {
+        "creator": "Ian Duffy from UK",
+        "license": "CC BY 2.0",
+        "attribution": "Ian Duffy from UK",
+        "mime_type": "image/jpeg"
+      }
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Penguins and humans",
+      "source": "wikimedia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Falkland_Islands_Penguins_49.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_title": "Falkland Islands Penguins 49.jpg",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/images/seg_005_Penguins_and_humans.jpg",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/stills/seg_005_Penguins_and_humans.still.mov",
+      "duration_seconds": 5.0,
+      "timeline": {
+        "enabled": true,
+        "label": "Penguins and humans",
+        "in_seconds": 0.0,
+        "out_seconds": 5.0
+      },
+      "wiki_image": {
+        "creator": "Ben Tubby",
+        "license": "CC BY 2.0",
+        "attribution": "Ben Tubby",
+        "mime_type": "image/jpeg"
+      }
+    },
+    {
+      "segment_id": "seg_006",
+      "concept": "Ad\u00e9lie penguin",
+      "source": "wikimedia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Falkland_Islands_Penguins_70.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "source_title": "Falkland Islands Penguins 70.jpg",
+      "downloaded": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/images/seg_006_Adlie_penguin.jpg",
+      "normalized": "/home/ericb/Documents/knowledge-dag/ai-director-app/projects/penguins-wiki/output/wiki-assets/stills/seg_006_Adlie_penguin.still.mov",
+      "duration_seconds": 5.0,
+      "timeline": {
+        "enabled": true,
+        "label": "Ad\u00e9lie penguin",
+        "in_seconds": 0.0,
+        "out_seconds": 5.0
+      },
+      "wiki_image": {
+        "creator": "Ben Tubby",
+        "license": "CC BY 2.0",
+        "attribution": "Ben Tubby",
+        "mime_type": "image/jpeg"
+      }
+    }
+  ],
+  "failures": []
+}

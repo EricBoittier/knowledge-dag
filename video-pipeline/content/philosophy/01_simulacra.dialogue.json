@@ -1,0 +1,147 @@
+{
+  "title": "Philosophy at the Edge — Episode 1: Simulacra",
+  "description": "Two-voice dialogue on Baudrillard-style simulacra, maps, and hyperreality. speaker_id 0 = Mara, 1 = Elias. Pair cuts with stylized b-roll from stylized_broll_pool in Resolve or similar.",
+  "characters": {
+    "0": "Mara",
+    "1": "Elias"
+  },
+  "stylized_broll_pool": [
+    "video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov"
+  ],
+  "dialogue_plan": [
+    {
+      "speaker_id": 0,
+      "text": "Today I want to pin down a word everyone throws around after reading half a blog post: simulacrum. What is it, actually, and why should anyone who edits video care?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "Start smaller. Alfred Korzybski's line that the map is not the territory. A map is useful because it lies in a disciplined way. A simulacrum begins when the map stops pointing at the territory and starts pointing only at other maps."
+    },
+    {
+      "speaker_id": 0,
+      "text": "So it's not simply a fake. A prop knife on stage is fake but honest. The audience knows the contract."
+    },
+    {
+      "speaker_id": 1,
+      "text": "Right. Baudrillard sketches orders of simulacra. Roughly: the image reflects a profound reality. Then it masks and denatures that reality. Then it masks the absence of reality. Finally it bears no relation to any reality whatever: it is its own pure simulacrum."
+    },
+    {
+      "speaker_id": 0,
+      "text": "The fourth order sounds like nihilism with a French accent. Give me something concrete before I roll my eyes."
+    },
+    {
+      "speaker_id": 1,
+      "text": "Take your timeline. You color-grade, you stabilize, you drop in stylized B-roll until Antarctica looks like a storyboard for a feeling you already sold in the thumbnail. The clip is no longer evidence of cold air on feathers. It is evidence of the look of clips about cold air on feathers."
+    },
+    {
+      "speaker_id": 0,
+      "text": "That is uncomfortably close to my last export. Are you saying every documentary gesture is bad faith?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "No. I am saying the ethical question moves. Good faith asks what the cut still owes the world when the world has already been replaced by its previews."
+    },
+    {
+      "speaker_id": 0,
+      "text": "Hyperreality was the other buzzword in my notes. Is that just VR goggles, or something worse?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "Worse in a boring way: a model of the world that is more legible, more coherent, and more emotionally convenient than the world, so the model becomes the primary experience people defend when facts arrive inconveniently."
+    },
+    {
+      "speaker_id": 0,
+      "text": "So the simulacrum is not the lie on top of reality. It is the machinery that makes reality optional."
+    },
+    {
+      "speaker_id": 1,
+      "text": "Optional is too strong. Fragile is better. The territory still has weather. The map just trains you to argue about the icon in the corner instead of opening the door."
+    },
+    {
+      "speaker_id": 0,
+      "text": "If I keep one discipline from this conversation when I cut the next piece, what should it be?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "Name the layer where truth-claims live. When you stylize, caption, score, and compress, say out loud what each layer is allowed to prove. Simulacra win by making that question feel pretentious. It isn't."
+    },
+    {
+      "speaker_id": 0,
+      "text": "Next episode I want signs without signifiers, or maybe the opposite. For now: thanks for letting the map argue back."
+    },
+    {
+      "speaker_id": 1,
+      "text": "The map always argued back. We just turned up its gain. Try not to mistake loudness for ground truth."
+    }
+  ],
+  "lines": [
+    {
+      "character": "mara",
+      "text": "Today I want to pin down a word everyone throws around after reading half a blog post: simulacrum. What is it, actually, and why should anyone who edits video care?"
+    },
+    {
+      "character": "elias",
+      "text": "Start smaller. Alfred Korzybski's line that the map is not the territory. A map is useful because it lies in a disciplined way. A simulacrum begins when the map stops pointing at the territory and starts pointing only at other maps."
+    },
+    {
+      "character": "mara",
+      "text": "So it's not simply a fake. A prop knife on stage is fake but honest. The audience knows the contract."
+    },
+    {
+      "character": "elias",
+      "text": "Right. Baudrillard sketches orders of simulacra. Roughly: the image reflects a profound reality. Then it masks and denatures that reality. Then it masks the absence of reality. Finally it bears no relation to any reality whatever: it is its own pure simulacrum."
+    },
+    {
+      "character": "mara",
+      "text": "The fourth order sounds like nihilism with a French accent. Give me something concrete before I roll my eyes."
+    },
+    {
+      "character": "elias",
+      "text": "Take your timeline. You color-grade, you stabilize, you drop in stylized B-roll until Antarctica looks like a storyboard for a feeling you already sold in the thumbnail. The clip is no longer evidence of cold air on feathers. It is evidence of the look of clips about cold air on feathers."
+    },
+    {
+      "character": "mara",
+      "text": "That is uncomfortably close to my last export. Are you saying every documentary gesture is bad faith?"
+    },
+    {
+      "character": "elias",
+      "text": "No. I am saying the ethical question moves. Good faith asks what the cut still owes the world when the world has already been replaced by its previews."
+    },
+    {
+      "character": "mara",
+      "text": "Hyperreality was the other buzzword in my notes. Is that just VR goggles, or something worse?"
+    },
+    {
+      "character": "elias",
+      "text": "Worse in a boring way: a model of the world that is more legible, more coherent, and more emotionally convenient than the world, so the model becomes the primary experience people defend when facts arrive inconveniently."
+    },
+    {
+      "character": "mara",
+      "text": "So the simulacrum is not the lie on top of reality. It is the machinery that makes reality optional."
+    },
+    {
+      "character": "elias",
+      "text": "Optional is too strong. Fragile is better. The territory still has weather. The map just trains you to argue about the icon in the corner instead of opening the door."
+    },
+    {
+      "character": "mara",
+      "text": "If I keep one discipline from this conversation when I cut the next piece, what should it be?"
+    },
+    {
+      "character": "elias",
+      "text": "Name the layer where truth-claims live. When you stylize, caption, score, and compress, say out loud what each layer is allowed to prove. Simulacra win by making that question feel pretentious. It isn't."
+    },
+    {
+      "character": "mara",
+      "text": "Next episode I want signs without signifiers, or maybe the opposite. For now: thanks for letting the map argue back."
+    },
+    {
+      "character": "elias",
+      "text": "The map always argued back. We just turned up its gain. Try not to mistake loudness for ground truth."
+    }
+  ]
+}

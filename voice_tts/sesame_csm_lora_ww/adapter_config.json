@@ -34,6 +34,7 @@
   "rank_pattern": {},
   "revision": null,
   "target_modules": [
+<<<<<<< HEAD
     "o_proj",
     "down_proj",
     "up_proj",
@@ -41,6 +42,15 @@
     "gate_proj",
     "k_proj",
     "q_proj"
+=======
+    "up_proj",
+    "k_proj",
+    "v_proj",
+    "down_proj",
+    "q_proj",
+    "gate_proj",
+    "o_proj"
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
   ],
   "target_parameters": null,
   "task_type": "CAUSAL_LM",

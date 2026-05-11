@@ -1,128 +1,20 @@
 {
-  "generated_at": "2026-04-26T09:42:46.884Z",
+  "generated_at": "2026-04-27T13:42:25.500Z",
   "annotations": [
     {
       "segment_id": "seg_001",
       "transition": "fade_in_12f",
-      "effects": [
-        "ken_burns_left",
-        "film_grain_subtle",
-        "taxonomy_rank_label",
-        "saturation_plus_8"
-      ],
-      "lut_hint": "soft_contrast_teal",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_002",
-      "transition": "dip_to_color_10f",
-      "effects": [
-        "ken_burns_right",
-        "title_lower_third",
-        "warmth_minus_5",
-        "clarity_soft"
-      ],
-      "lut_hint": "soft_contrast_teal",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_003",
-      "transition": "directional_wipe_12f",
-      "effects": [
-        "slow_zoom_in_105",
-        "title_lower_third",
-        "taxonomy_rank_label",
-        "denoise_light"
-      ],
-      "lut_hint": "neutral_doc_rec709",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_004",
-      "transition": "push_right_10f",
-      "effects": [
-        "ken_burns_right",
-        "title_lower_third",
-        "warmth_minus_5",
-        "clarity_soft"
-      ],
-      "lut_hint": "soft_contrast_teal",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_005",
-      "transition": "blur_dissolve_8f",
-      "effects": [
-        "ken_burns_right",
-        "title_lower_third",
-        "warmth_minus_5",
-        "clarity_soft"
-      ],
-      "lut_hint": "neutral_doc_rec709",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_006",
-      "transition": "luma_fade_12f",
-      "effects": [
-        "micro_shake_stabilized",
-        "contrast_pop",
-        "taxonomy_rank_label",
-        "shadow_lift_8"
-      ],
-      "lut_hint": "soft_contrast_teal",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_007",
-      "transition": "luma_fade_12f",
-      "effects": [
-        "ken_burns_right",
-        "title_lower_third",
-        "warmth_minus_5",
-        "clarity_soft"
-      ],
-      "lut_hint": "natural_green_lift",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_008",
-      "transition": "cross_dissolve_8f",
-      "effects": [
-        "push_in_center",
-        "clarity_soft",
-        "taxonomy_rank_label",
-        "highlight_rolloff"
-      ],
-      "lut_hint": "high_clarity_newsreel",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_009",
-      "transition": "dip_to_color_10f",
       "effects": [
         "pan_down_soft",
         "clarity_medium",
         "title_lower_third",
         "black_point_plus_3"
       ],
-      "lut_hint": "warm_film_stock",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_010",
-      "transition": "dip_to_color_10f",
-      "effects": [
-        "ken_burns_right",
-        "title_lower_third",
-        "warmth_minus_5",
-        "clarity_soft"
-      ],
       "lut_hint": "high_clarity_newsreel",
       "audio_note": "mute_source_audio_narration_only"
     },
     {
-      "segment_id": "seg_011",
+      "segment_id": "seg_002",
       "transition": "film_flash_6f",
       "effects": [
         "micro_shake_stabilized",
@@ -130,41 +22,173 @@
         "taxonomy_rank_label",
         "shadow_lift_8"
       ],
-      "lut_hint": "high_clarity_newsreel",
+      "lut_hint": "soft_contrast_teal",
       "audio_note": "mute_source_audio_narration_only"
     },
     {
-      "segment_id": "seg_012",
+      "segment_id": "seg_003",
       "transition": "film_flash_6f",
-      "effects": [
-        "micro_shake_stabilized",
-        "contrast_pop",
-        "taxonomy_rank_label",
-        "shadow_lift_8"
-      ],
-      "lut_hint": "neutral_doc_rec709",
-      "audio_note": "mute_source_audio_narration_only"
-    },
-    {
-      "segment_id": "seg_013",
-      "transition": "push_right_10f",
       "effects": [
         "ken_burns_left",
         "film_grain_subtle",
         "taxonomy_rank_label",
         "saturation_plus_8"
       ],
-      "lut_hint": "neutral_doc_rec709",
+      "lut_hint": "soft_contrast_teal",
       "audio_note": "mute_source_audio_narration_only"
     },
     {
-      "segment_id": "seg_014",
-      "transition": "fade_through_white_8f",
+      "segment_id": "seg_004",
+      "transition": "film_flash_6f",
+      "effects": [
+        "push_in_center",
+        "clarity_soft",
+        "taxonomy_rank_label",
+        "highlight_rolloff"
+      ],
+      "lut_hint": "warm_film_stock",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_005",
+      "transition": "push_right_10f",
+      "effects": [
+        "slow_zoom_out_103",
+        "vignette_soft",
+        "taxonomy_rank_label",
+        "contrast_pop"
+      ],
+      "lut_hint": "warm_film_stock",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_006",
+      "transition": "luma_fade_12f",
+      "effects": [
+        "parallax_mild",
+        "title_lower_third",
+        "denoise_light",
+        "cool_tint_6"
+      ],
+      "lut_hint": "natural_green_lift",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_007",
+      "transition": "luma_fade_12f",
+      "effects": [
+        "slow_zoom_out_103",
+        "vignette_soft",
+        "taxonomy_rank_label",
+        "contrast_pop"
+      ],
+      "lut_hint": "warm_film_stock",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_008",
+      "transition": "dip_to_color_10f",
+      "effects": [
+        "micro_shake_stabilized",
+        "contrast_pop",
+        "taxonomy_rank_label",
+        "shadow_lift_8"
+      ],
+      "lut_hint": "warm_film_stock",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_009",
+      "transition": "directional_wipe_12f",
+      "effects": [
+        "slow_zoom_in_108",
+        "vignette_soft",
+        "title_lower_third",
+        "warmth_plus_4"
+      ],
+      "lut_hint": "warm_film_stock",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_010",
+      "transition": "film_flash_6f",
+      "effects": [
+        "slow_zoom_in_105",
+        "title_lower_third",
+        "taxonomy_rank_label",
+        "denoise_light"
+      ],
+      "lut_hint": "soft_contrast_teal",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_011",
+      "transition": "film_flash_6f",
+      "effects": [
+        "slow_zoom_in_108",
+        "vignette_soft",
+        "title_lower_third",
+        "warmth_plus_4"
+      ],
+      "lut_hint": "natural_green_lift",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_012",
+      "transition": "push_right_10f",
       "effects": [
         "pan_up_soft",
         "edge_soften",
         "taxonomy_rank_label",
         "desaturate_10"
+      ],
+      "lut_hint": "neutral_doc_rec709",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_013",
+      "transition": "blur_dissolve_8f",
+      "effects": [
+        "slow_zoom_in_105",
+        "title_lower_third",
+        "taxonomy_rank_label",
+        "denoise_light"
+      ],
+      "lut_hint": "soft_contrast_teal",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_014",
+      "transition": "blur_dissolve_8f",
+      "effects": [
+        "ken_burns_left",
+        "film_grain_subtle",
+        "taxonomy_rank_label",
+        "saturation_plus_8"
+      ],
+      "lut_hint": "high_clarity_newsreel",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_015",
+      "transition": "fade_through_white_8f",
+      "effects": [
+        "pan_down_soft",
+        "clarity_medium",
+        "title_lower_third",
+        "black_point_plus_3"
+      ],
+      "lut_hint": "natural_green_lift",
+      "audio_note": "mute_source_audio_narration_only"
+    },
+    {
+      "segment_id": "seg_016",
+      "transition": "dip_to_color_10f",
+      "effects": [
+        "parallax_mild",
+        "title_lower_third",
+        "denoise_light",
+        "cool_tint_6"
       ],
       "lut_hint": "cold_arctic_finish",
       "audio_note": "mute_source_audio_narration_only"

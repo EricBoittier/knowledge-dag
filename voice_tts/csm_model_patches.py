@@ -3,13 +3,17 @@
 from __future__ import annotations
 
 import types
+<<<<<<< HEAD
 from typing import Any
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
 
 import torch
 import torch.nn as nn
 from transformers.loss.loss_utils import ForCausalLMLoss
 from transformers.modeling_outputs import CausalLMOutputWithPast
 
+<<<<<<< HEAD
 _PATCH_CREATE_CAUSAL_MASK_ATTR = "_kd_csm_create_causal_mask_1d_fix"
 
 
@@ -88,6 +92,8 @@ def patch_csm_create_causal_mask_for_1d_position_ids() -> None:
     modeling_csm.create_causal_mask = _wrapped
     setattr(masking_utils, _PATCH_CREATE_CAUSAL_MASK_ATTR, True)
 
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
 
 def _hf_csm_depth_decoder_causal_lm_forward(
     self,
@@ -135,8 +141,11 @@ def _hf_csm_depth_decoder_causal_lm_forward(
 
     codebook_indices = torch.arange(seq_len, device=device) + past_seen_tokens
 
+<<<<<<< HEAD
     # Do not let kwargs override normalized position_ids (Unsloth may pass position_ids in **kwargs).
     kw2 = {k: v for k, v in kwargs.items() if k != "position_ids"}
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     outputs = self.model(
         input_ids=input_ids,
         backbone_last_hidden_state=backbone_last_hidden_state,
@@ -145,7 +154,11 @@ def _hf_csm_depth_decoder_causal_lm_forward(
         past_key_values=past_key_values,
         inputs_embeds=inputs_embeds,
         use_cache=use_cache,
+<<<<<<< HEAD
         **kw2,
+=======
+        **kwargs,
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     )
 
     hidden_states = outputs[0]

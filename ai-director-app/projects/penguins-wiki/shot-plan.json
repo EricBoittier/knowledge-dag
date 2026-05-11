@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-05-11T10:46:36.883927+00:00",
+  "traversal": "wiki_order",
+  "segments": [
+    {
+      "segment_id": "seg_001",
+      "concept": "Penguin",
+      "keywords": [
+        "Penguin",
+        "Penguin",
+        "wikipedia",
+        "wikimedia"
+      ],
+      "target_duration_sec": 5.0,
+      "priority": 1.0,
+      "query": "Penguin Penguin"
+    },
+    {
+      "segment_id": "seg_002",
+      "concept": "Etymology",
+      "keywords": [
+        "Etymology",
+        "Penguin",
+        "wikipedia",
+        "wikimedia"
+      ],
+      "target_duration_sec": 5.0,
+      "priority": 0.94,
+      "query": "Etymology Penguin"
+    },
+    {
+      "segment_id": "seg_003",
+      "concept": "Systematics and evolution",
+      "keywords": [
+        "Systematics and evolution",
+        "Penguin",
+        "wikipedia",
+        "wikimedia"
+      ],
+      "target_duration_sec": 5.0,
+      "priority": 0.88,
+      "query": "Systematics and evolution Penguin"
+    },
+    {
+      "segment_id": "seg_004",
+      "concept": "Anatomy and physiology",
+      "keywords": [
+        "Anatomy and physiology",
+        "Penguin",
+        "wikipedia",
+        "wikimedia"
+      ],
+      "target_duration_sec": 5.0,
+      "priority": 0.82,
+      "query": "Anatomy and physiology Penguin"
+    },
+    {
+      "segment_id": "seg_005",
+      "concept": "Penguins and humans",
+      "keywords": [
+        "Penguins and humans",
+        "Penguin",
+        "wikipedia",
+        "wikimedia"
+      ],
+      "target_duration_sec": 5.0,
+      "priority": 0.64,
+      "query": "Penguins and humans Penguin"
+    },
+    {
+      "segment_id": "seg_006",
+      "concept": "Ad\u00e9lie penguin",
+      "keywords": [
+        "Ad\u00e9lie penguin",
+        "Penguin",
+        "wikipedia",
+        "wikimedia"
+      ],
+      "target_duration_sec": 5.0,
+      "priority": 0.58,
+      "query": "Ad\u00e9lie penguin Penguin"
+    }
+  ]
+}

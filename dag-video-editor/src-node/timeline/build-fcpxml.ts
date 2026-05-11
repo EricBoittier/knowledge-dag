@@ -21,6 +21,16 @@ interface MediaManifest {
   entries: MediaManifestEntry[];
 }
 
+interface OverlaySubtitleSegment {
+  text: string;
+  start: number;
+  end: number;
+}
+
+interface OverlayManifest {
+  subtitle_segments?: OverlaySubtitleSegment[];
+}
+
 function secToRational(sec: number, scale = 24000): string {
   const v = Math.max(0, Math.round(sec * scale));
   return `${v}/${scale}s`;
@@ -45,6 +55,11 @@ export function buildFcpxmlFromMediaManifest(config: PipelineConfig, repoRoot: s
   if (entries.length === 0) {
     throw new Error("No timeline-enabled entries in media manifest");
   }
+  let subtitleSegments: OverlaySubtitleSegment[] = [];
+  if (config.timeline.overlay_manifest_path && fs.existsSync(config.timeline.overlay_manifest_path)) {
+    const overlayPayload = readJsonFile<OverlayManifest>(config.timeline.overlay_manifest_path);
+    subtitleSegments = overlayPayload.subtitle_segments ?? [];
+  }
 
   const assetsXml: string[] = [];
   const clipsXml: string[] = [];
@@ -64,10 +79,23 @@ export function buildFcpxmlFromMediaManifest(config: PipelineConfig, repoRoot: s
         toUri(e.normalized)
       )}" start="0s" duration="${secToRational(duration)}" hasVideo="1" hasAudio="1" audioSources="1" audioChannels="2" audioRate="${config.timeline.audio_rate}" format="rFormat" />`
     );
+    const markerXml: string[] = [];
+    const clipStart = offset;
+    const clipEnd = offset + clipDuration;
+    subtitleSegments.forEach((seg) => {
+      if (seg.start < clipStart || seg.start >= clipEnd) {
+        return;
+      }
+      const markerStart = Math.max(0, seg.start - clipStart + tin);
+      const markerDur = Math.max(0.05, seg.end - seg.start);
+      markerXml.push(
+        `<marker start="${secToRational(markerStart)}" duration="${secToRational(markerDur)}" value="${xmlEscape(seg.text)}" />`
+      );
+    });
     clipsXml.push(
       `<asset-clip name="${xmlEscape(clipName)}" ref="${assetId}" offset="${secToRational(offset)}" start="${secToRational(
         tin
-      )}" duration="${secToRational(clipDuration)}" />`
+      )}" duration="${secToRational(clipDuration)}">${markerXml.join("")}</asset-clip>`
     );
     offset += clipDuration;
   });

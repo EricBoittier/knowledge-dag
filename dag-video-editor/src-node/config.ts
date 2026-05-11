@@ -36,6 +36,16 @@ export interface PipelineConfig {
     audio_rate: number;
     audio_channels: number;
   };
+  broll_analyzer?: {
+    enabled?: boolean;
+    model_name?: string;
+    device?: string;
+    sample_interval_sec?: number;
+    window_duration_sec?: number;
+    max_windows?: number;
+    min_window_score?: number;
+    max_new_tokens?: number;
+  };
   transcription: {
     enabled: boolean;
     model: string;
@@ -58,6 +68,8 @@ export interface PipelineConfig {
     output_fcpxml: string;
     segment_trim_lead_sec: number;
     segment_trim_tail_sec: number;
+    overlay_manifest_path?: string;
+    use_broll_top_window?: boolean;
   };
   render: {
     mode: string;
@@ -82,6 +94,9 @@ export function loadConfig(configPath: string): { config: PipelineConfig; repoRo
   config.subtitles.output_srt = resolveFromRepoRoot(repoRoot, config.subtitles.output_srt);
   config.subtitles.output_text = resolveFromRepoRoot(repoRoot, config.subtitles.output_text);
   config.timeline.output_fcpxml = resolveFromRepoRoot(repoRoot, config.timeline.output_fcpxml);
+  if (config.timeline.overlay_manifest_path) {
+    config.timeline.overlay_manifest_path = resolveFromRepoRoot(repoRoot, config.timeline.overlay_manifest_path);
+  }
   config.render.output_video = resolveFromRepoRoot(repoRoot, config.render.output_video);
   return { config, repoRoot, configPath: absConfigPath };
 }

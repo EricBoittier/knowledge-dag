@@ -11,6 +11,7 @@ import unicodedata
 from pathlib import Path
 from typing import Any, Dict, List
 
+from broll_analyzer import analyze_video_for_broll, default_analysis, load_analyzer_config
 from media_probe import assert_audio_policy, probe_media, validate_probe
 
 SUPPORTED_EXTS = {".mp4", ".mov", ".webm", ".mkv", ".m4v"}
@@ -115,6 +116,7 @@ def normalize(
     paths = config["paths"]
     media_policy = config["media_policy"]
     review_policy = config.get("review_policy", {"enabled": False})
+    broll_cfg = load_analyzer_config(config.get("broll_analyzer"))
 
     input_dir = input_dir_override or (config_path.parent / paths["input_dir"])
     output_dir = output_dir_override or (config_path.parent / paths["normalized_dir"])
@@ -162,6 +164,13 @@ def normalize(
                     "in_seconds": 0.0,
                     "out_seconds": probe.duration_seconds,
                 },
+                    "broll_analysis": default_analysis(
+                        duration_seconds=probe.duration_seconds,
+                        reason="skipped_existing_clip",
+                    ),
+                    "broll_windows": [],
+                    "broll_top_window": None,
+                    "broll_markers": [],
                     "errors": errors,
                     "skipped_existing": True,
                 }
@@ -178,6 +187,11 @@ def normalize(
             sample_rate=media_policy["audio_sample_rate"],
             channels=media_policy["audio_channels"],
         )
+        broll_analysis = analyze_video_for_broll(
+            normalized_path=mov_out,
+            duration_seconds=probe.duration_seconds,
+            analyzer_cfg=broll_cfg,
+        )
         manifest_entries.append(
             {
                 "source": str(src.resolve()),
@@ -193,6 +207,10 @@ def normalize(
                     "in_seconds": 0.0,
                     "out_seconds": probe.duration_seconds,
                 },
+                "broll_analysis": broll_analysis,
+                "broll_windows": list(broll_analysis.get("broll_windows", [])),
+                "broll_top_window": broll_analysis.get("broll_top_window"),
+                "broll_markers": list(broll_analysis.get("broll_markers", [])),
                 "errors": errors,
                 "skipped_existing": False,
             }

@@ -12,6 +12,8 @@ import unicodedata
 from datetime import UTC, datetime
 from pathlib import Path
 
+from broll_analyzer import analyze_video_for_broll, default_analysis, load_analyzer_config
+
 MAX_VIDEO_DURATION_SECONDS = 10 * 60
 
 
@@ -199,6 +201,7 @@ def main() -> int:
     project_dir = Path(args.project_dir).resolve()
     config = load_json(Path(args.config).resolve())
     media_cfg = config["media"]
+    broll_cfg = load_analyzer_config(config.get("broll_analyzer"))
     fallback_duration = max(0.25, coerce_duration(config.get("planner", {}).get("default_segment_duration_sec", 12)))
     selected = load_json(project_dir / "selected-clips.json")
     try:
@@ -314,8 +317,18 @@ def main() -> int:
                         "normalized": str(norm_out.resolve()),
                         "duration_seconds": duration,
                         "timeline": {"enabled": True, "label": seg["concept"], "in_seconds": 0.0, "out_seconds": duration},
+                        "broll_analysis": analyze_video_for_broll(
+                            normalized_path=norm_out,
+                            duration_seconds=duration,
+                            analyzer_cfg=broll_cfg,
+                        )
+                        if not args.dry_run
+                        else default_analysis(duration, reason="dry_run"),
                     }
                 )
+                entries[-1]["broll_windows"] = list(entries[-1]["broll_analysis"].get("broll_windows", []))
+                entries[-1]["broll_top_window"] = entries[-1]["broll_analysis"].get("broll_top_window")
+                entries[-1]["broll_markers"] = list(entries[-1]["broll_analysis"].get("broll_markers", []))
                 print(
                     f"[download]   OK ({clip.get('source')}) {duration:.1f}s — {norm_out.name}",
                     flush=True,

@@ -18,11 +18,22 @@
     "audio_rate": 48000,
     "audio_channels": 2
   },
+  "broll_analyzer": {
+    "enabled": false,
+    "model_name": "Salesforce/blip-image-captioning-base",
+    "device": "cpu",
+    "sample_interval_sec": 2.0,
+    "window_duration_sec": 4.0,
+    "max_windows": 5,
+    "min_window_score": 0.35,
+    "max_new_tokens": 32
+  },
   "timeline": {
     "name": "WalrusDfsDirectorCut",
     "fps": 30,
     "width": 1920,
     "height": 1080,
+    "use_broll_top_window": false,
     "segment_trim_lead_sec": 0.2,
     "segment_trim_tail_sec": 0.2
   },

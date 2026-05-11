@@ -1,0 +1,92 @@
+{
+  "nodes": [
+    {
+      "id": "n_001",
+      "title": "Penguin",
+      "tags": [
+        "wikipedia",
+        "image",
+        "penguin"
+      ],
+      "importance": 1.0,
+      "duration_intent_sec": 5.0
+    },
+    {
+      "id": "n_002",
+      "title": "Etymology",
+      "tags": [
+        "wikipedia",
+        "image",
+        "penguin"
+      ],
+      "importance": 0.94,
+      "duration_intent_sec": 5.0
+    },
+    {
+      "id": "n_003",
+      "title": "Systematics and evolution",
+      "tags": [
+        "wikipedia",
+        "image",
+        "penguin"
+      ],
+      "importance": 0.88,
+      "duration_intent_sec": 5.0
+    },
+    {
+      "id": "n_004",
+      "title": "Anatomy and physiology",
+      "tags": [
+        "wikipedia",
+        "image",
+        "penguin"
+      ],
+      "importance": 0.82,
+      "duration_intent_sec": 5.0
+    },
+    {
+      "id": "n_005",
+      "title": "Penguins and humans",
+      "tags": [
+        "wikipedia",
+        "image",
+        "penguin"
+      ],
+      "importance": 0.64,
+      "duration_intent_sec": 5.0
+    },
+    {
+      "id": "n_006",
+      "title": "Ad\u00e9lie penguin",
+      "tags": [
+        "wikipedia",
+        "image",
+        "penguin"
+      ],
+      "importance": 0.58,
+      "duration_intent_sec": 5.0
+    }
+  ],
+  "edges": [
+    {
+      "from": "n_001",
+      "to": "n_002"
+    },
+    {
+      "from": "n_002",
+      "to": "n_003"
+    },
+    {
+      "from": "n_003",
+      "to": "n_004"
+    },
+    {
+      "from": "n_004",
+      "to": "n_005"
+    },
+    {
+      "from": "n_005",
+      "to": "n_006"
+    }
+  ]
+}

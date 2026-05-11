@@ -384,6 +384,7 @@ export function exportDaVinciBundle(projectDir: string, cfg: any, opts?: ExportB
   }, 0);
   const trimScale =
     narrationDurationSec > 0 && rawMainTotal > 0 ? Math.max(0.05, Math.min(1, narrationDurationSec / rawMainTotal)) : 1;
+  const useBrollTopWindow = Boolean(cfg?.timeline?.use_broll_top_window);
   const processedDir = path.resolve(workDir, "output", "processed");
   fs.mkdirSync(processedDir, { recursive: true });
   const indexRowsDraft: IndexDraft[] = [];
@@ -405,8 +406,16 @@ export function exportDaVinciBundle(projectDir: string, cfg: any, opts?: ExportB
     assetCount += 1;
     const assetId = `r${assetCount}`;
     const dur = Number(e.duration_seconds || 1);
-    const tin = Number(e.timeline?.in_seconds || 0);
-    const tout = Number(e.timeline?.out_seconds || dur);
+    let tin = Number(e.timeline?.in_seconds || 0);
+    let tout = Number(e.timeline?.out_seconds || dur);
+    if (useBrollTopWindow && e?.broll_top_window) {
+      const bIn = Number(e.broll_top_window.start_seconds);
+      const bOut = Number(e.broll_top_window.end_seconds);
+      if (Number.isFinite(bIn) && Number.isFinite(bOut) && bOut > bIn) {
+        tin = bIn;
+        tout = bOut;
+      }
+    }
     const clipDurRaw = Math.max(0.1, Math.min(dur, tout) - tin);
     const clipDur = Math.max(0.1, clipDurRaw * trimScale);
     const ann = annotationBySeg.get(e.segment_id);
@@ -484,6 +493,20 @@ export function exportDaVinciBundle(projectDir: string, cfg: any, opts?: ExportB
       detail: e.segment_id,
       source: timelineSrc,
     });
+    const brollMarkers = Array.isArray(e?.broll_markers) ? e.broll_markers : [];
+    for (const marker of brollMarkers) {
+      const label = String(marker?.label || "B-roll");
+      const score = Number(marker?.score || 0);
+      indexRowsDraft.push({
+        start_sec: Number(offset.toFixed(4)),
+        end_sec: Number((offset + clipDur).toFixed(4)),
+        lane: 0,
+        category: "marker",
+        label,
+        detail: `broll score=${score.toFixed(3)} · ${e.segment_id || ""}`,
+        source: timelineSrc,
+      });
+    }
     offset += clipDur;
     if (!fs.existsSync(timelineSrc)) {
       missing.push(timelineSrc);

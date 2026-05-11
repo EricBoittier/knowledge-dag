@@ -10,6 +10,7 @@ const FILES_TO_SEED = [
   "script-lines.json",
   "script.md",
   "edit-annotations.json",
+  "timeline-annotations.json",
 ] as const;
 
 export function variantsIndexPath(projectDir: string): string {

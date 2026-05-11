@@ -32,10 +32,15 @@ from unsloth import FastModel, is_bfloat16_supported
 
 from csm_dataset import build_csm_processed_dataset, load_local_csm_raw
 from csm_model_patches import (
+<<<<<<< HEAD
     patch_csm_create_causal_mask_for_1d_position_ids,
     patch_depth_decoder_causal_lm_forward,
     patch_depth_decoder_embedding_clone,
     sync_csm_backbone_audio_embedding_from_depth,
+=======
+    patch_depth_decoder_causal_lm_forward,
+    patch_depth_decoder_embedding_clone,
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
 )
 
 
@@ -85,6 +90,7 @@ def parse_args():
         default=None,
         help="Resume from a Trainer checkpoint dir, e.g. outputs_csm/checkpoint-500",
     )
+<<<<<<< HEAD
     p.add_argument(
         "--audio-peak-norm",
         type=float,
@@ -98,12 +104,17 @@ def parse_args():
         default=None,
         help="Drop clips with RMS below this (on loaded mono audio, before peak norm). Try 0.005–0.02.",
     )
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     return p.parse_args()
 
 
 def main():
     args = parse_args()
+<<<<<<< HEAD
     patch_csm_create_causal_mask_for_1d_position_ids()
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     if not args.dataset_dir.is_dir():
         raise SystemExit(f"--dataset-dir is not a directory: {args.dataset_dir}")
     if args.save_steps is not None and args.save_steps < 1:
@@ -148,11 +159,14 @@ def main():
         use_rslora=False,
         loftq_config=None,
     )
+<<<<<<< HEAD
     if sync_csm_backbone_audio_embedding_from_depth(model):
         print(
             "Synced backbone audio embeddings from depth decoder (unsloth/csm-1b checkpoint).",
             flush=True,
         )
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     if patch_depth_decoder_embedding_clone(model) == 0:
         print(
             "Warning: depth-decoder embedding clone patch did not apply "
@@ -166,12 +180,16 @@ def main():
             flush=True,
         )
 
+<<<<<<< HEAD
     raw_ds = load_local_csm_raw(
         args.dataset_dir,
         speaker_id=args.speaker_id,
         peak_norm_max=args.audio_peak_norm,
         min_rms=args.min_audio_rms,
     )
+=======
+    raw_ds = load_local_csm_raw(args.dataset_dir, speaker_id=args.speaker_id)
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     processed_ds = build_csm_processed_dataset(raw_ds, processor)
 
     use_epochs = args.num_train_epochs is not None

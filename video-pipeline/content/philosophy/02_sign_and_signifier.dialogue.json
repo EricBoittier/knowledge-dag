@@ -1,0 +1,163 @@
+{
+  "title": "Philosophy at the Edge — Episode 2: Sign and Signifier",
+  "description": "Two-voice dialogue on Saussure: sign, signifier, signified, arbitrariness, and value. speaker_id 0 = Mara, 1 = Elias. Continues from episode 1; pair with stylized_broll_pool in edit.",
+  "characters": {
+    "0": "Mara",
+    "1": "Elias"
+  },
+  "stylized_broll_pool": [
+    "video-pipeline/output/style_transfer/seg_001_Psycho_Penguin_intro_-_SHOUTOUT_to_Psycho_Penguin_02247b99.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_002_penguin_adaptations_-_year_2_6eb3d22a.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_009_Emperor_Penguin_Encounter_Antarctica_Lindblad_Expeditions_e3ea4856.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_011_Antarctic_Gentoo_penguins_found_breeding_further_south_due_to_cl_b624483d.normalized.stylized.mov",
+    "video-pipeline/output/style_transfer/seg_012_PENGUIN_Nature_is_so_beautiful_24279806.normalized.stylized.mov"
+  ],
+  "dialogue_plan": [
+    {
+      "speaker_id": 0,
+      "text": "Last time we ended with simulacra and maps. I threatened to ask about signs without signifiers. So: can you have one without the other, or was I being cute?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "In the tradition people mean when they say Saussure, a linguistic sign ties two faces: a signified, which is the concept, and a signifier, which is the perceptible form, like a word's sound or a line of text on screen. The sign is the union of both."
+    },
+    {
+      "speaker_id": 0,
+      "text": "So a signifier without a signified would be... pure noise? Shapes that never settle into meaning?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "Or meaning postponed. Subtitles that slip out of sync, placeholder glyphs, glitch type that your brain refuses to lexicalize. The channel is there; the contract that noise will mean something hasn't closed yet."
+    },
+    {
+      "speaker_id": 0,
+      "text": "And a signified without a signifier sounds like private thought, never shared."
+    },
+    {
+      "speaker_id": 1,
+      "text": "Roughly. The moment you try to hand it to another person, you smuggle in some material form, even a gesture or a cut. Language socializes thought by forcing it through signifiers."
+    },
+    {
+      "speaker_id": 0,
+      "text": "Saussure also said the bond between signifier and signified is arbitrary for many signs. So why does it feel inevitable that fire is hot in the mouth when you say it aloud?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "Arbitrary does not mean optional for you personally. It means no natural pipe from sound to concept across languages. Motivation can still pile up inside a tradition: onomatopoeia, etymologies, habits of metaphor. The inevitability you feel is history, not physics."
+    },
+    {
+      "speaker_id": 0,
+      "text": "He also talked about value coming from difference inside a system, not from a thing's solo essence. Translate that for someone grading thumbnails."
+    },
+    {
+      "speaker_id": 1,
+      "text": "A thumbnail does not mean because it glows in isolation. It means because it differs from the other tiles in the grid: brighter face, bigger promise, faster contrast curve. Signification is relational, like phonemes in a language."
+    },
+    {
+      "speaker_id": 0,
+      "text": "If I swap the font on a caption but keep the words, I changed the signifier. If I keep the font but rewrite the line, I changed the signified. If I do both, is it still the same sign?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "For practical purposes, no. For analysis, you track which face moved. Editors who only notice one are surprised when audiences read a different story than the one they thought they shipped."
+    },
+    {
+      "speaker_id": 0,
+      "text": "Peirce later split signs into icon, index, symbol. Do we need that this week or is it homework?"
+    },
+    {
+      "speaker_id": 1,
+      "text": "Homework with one cheat sheet: an icon resembles what it is about, an index bears a causal or existential trace, a symbol rests on convention. Your stylized penguin can slide between all three depending on what you claim the shot is doing."
+    },
+    {
+      "speaker_id": 0,
+      "text": "So the discipline for this week is the same family as last week: name what you are asking the sign to carry, and which face you moved."
+    },
+    {
+      "speaker_id": 1,
+      "text": "Yes. Next week we can chase the chain further: interpretation, codes, myth in Barthes' sense. For now, remember: no signifier, no social sign; no signified, no point—only physics."
+    },
+    {
+      "speaker_id": 0,
+      "text": "I'll take physics and you can keep Paris. Thanks, Elias."
+    },
+    {
+      "speaker_id": 1,
+      "text": "Paris is also a sign. Good luck not stepping on the dog."
+    }
+  ],
+  "lines": [
+    {
+      "character": "mara",
+      "text": "Last time we ended with simulacra and maps. I threatened to ask about signs without signifiers. So: can you have one without the other, or was I being cute?"
+    },
+    {
+      "character": "elias",
+      "text": "In the tradition people mean when they say Saussure, a linguistic sign ties two faces: a signified, which is the concept, and a signifier, which is the perceptible form, like a word's sound or a line of text on screen. The sign is the union of both."
+    },
+    {
+      "character": "mara",
+      "text": "So a signifier without a signified would be... pure noise? Shapes that never settle into meaning?"
+    },
+    {
+      "character": "elias",
+      "text": "Or meaning postponed. Subtitles that slip out of sync, placeholder glyphs, glitch type that your brain refuses to lexicalize. The channel is there; the contract that noise will mean something hasn't closed yet."
+    },
+    {
+      "character": "mara",
+      "text": "And a signified without a signifier sounds like private thought, never shared."
+    },
+    {
+      "character": "elias",
+      "text": "Roughly. The moment you try to hand it to another person, you smuggle in some material form, even a gesture or a cut. Language socializes thought by forcing it through signifiers."
+    },
+    {
+      "character": "mara",
+      "text": "Saussure also said the bond between signifier and signified is arbitrary for many signs. So why does it feel inevitable that fire is hot in the mouth when you say it aloud?"
+    },
+    {
+      "character": "elias",
+      "text": "Arbitrary does not mean optional for you personally. It means no natural pipe from sound to concept across languages. Motivation can still pile up inside a tradition: onomatopoeia, etymologies, habits of metaphor. The inevitability you feel is history, not physics."
+    },
+    {
+      "character": "mara",
+      "text": "He also talked about value coming from difference inside a system, not from a thing's solo essence. Translate that for someone grading thumbnails."
+    },
+    {
+      "character": "elias",
+      "text": "A thumbnail does not mean because it glows in isolation. It means because it differs from the other tiles in the grid: brighter face, bigger promise, faster contrast curve. Signification is relational, like phonemes in a language."
+    },
+    {
+      "character": "mara",
+      "text": "If I swap the font on a caption but keep the words, I changed the signifier. If I keep the font but rewrite the line, I changed the signified. If I do both, is it still the same sign?"
+    },
+    {
+      "character": "elias",
+      "text": "For practical purposes, no. For analysis, you track which face moved. Editors who only notice one are surprised when audiences read a different story than the one they thought they shipped."
+    },
+    {
+      "character": "mara",
+      "text": "Peirce later split signs into icon, index, symbol. Do we need that this week or is it homework?"
+    },
+    {
+      "character": "elias",
+      "text": "Homework with one cheat sheet: an icon resembles what it is about, an index bears a causal or existential trace, a symbol rests on convention. Your stylized penguin can slide between all three depending on what you claim the shot is doing."
+    },
+    {
+      "character": "mara",
+      "text": "So the discipline for this week is the same family as last week: name what you are asking the sign to carry, and which face you moved."
+    },
+    {
+      "character": "elias",
+      "text": "Yes. Next week we can chase the chain further: interpretation, codes, myth in Barthes' sense. For now, remember: no signifier, no social sign; no signified, no point—only physics."
+    },
+    {
+      "character": "mara",
+      "text": "I'll take physics and you can keep Paris. Thanks, Elias."
+    },
+    {
+      "character": "elias",
+      "text": "Paris is also a sign. Good luck not stepping on the dog."
+    }
+  ]
+}

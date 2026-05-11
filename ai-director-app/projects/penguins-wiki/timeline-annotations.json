@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-05-11T10:46:36.883927+00:00",
+  "mode": "studio",
+  "markers": [
+    {
+      "id": "wiki_source",
+      "t_seconds": 0,
+      "label": "Wikipedia: Penguin"
+    }
+  ],
+  "text_overlays": [
+    {
+      "id": "title_seg_001",
+      "start": 0.35,
+      "end": 3.8,
+      "text": "Penguin",
+      "lane": -3,
+      "style": {
+        "placement": "top",
+        "alignment": "center",
+        "fontSize": 58,
+        "fontColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "title_seg_002",
+      "start": 5.35,
+      "end": 8.8,
+      "text": "Etymology",
+      "lane": -3,
+      "style": {
+        "placement": "top",
+        "alignment": "center",
+        "fontSize": 58,
+        "fontColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "title_seg_003",
+      "start": 10.35,
+      "end": 13.8,
+      "text": "Systematics and evolution",
+      "lane": -3,
+      "style": {
+        "placement": "top",
+        "alignment": "center",
+        "fontSize": 58,
+        "fontColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "title_seg_004",
+      "start": 15.35,
+      "end": 18.8,
+      "text": "Anatomy and physiology",
+      "lane": -3,
+      "style": {
+        "placement": "top",
+        "alignment": "center",
+        "fontSize": 58,
+        "fontColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "title_seg_005",
+      "start": 20.35,
+      "end": 23.8,
+      "text": "Penguins and humans",
+      "lane": -3,
+      "style": {
+        "placement": "top",
+        "alignment": "center",
+        "fontSize": 58,
+        "fontColor": "#FFFFFF"
+      }
+    },
+    {
+      "id": "title_seg_006",
+      "start": 25.35,
+      "end": 28.8,
+      "text": "Ad\u00e9lie penguin",
+      "lane": -3,
+      "style": {
+        "placement": "top",
+        "alignment": "center",
+        "fontSize": 58,
+        "fontColor": "#FFFFFF"
+      }
+    }
+  ],
+  "media_overlays": []
+}

@@ -1,175 +1,195 @@
 {
-  "generated_at": "2026-04-26T09:42:46.884Z",
+  "generated_at": "2026-04-27T13:42:25.499Z",
   "traversal": "depth_first",
   "segments": [
     {
       "segment_id": "seg_001",
-      "concept": "Penguins: An Introduction",
+      "concept": "Introduction to Penguins",
       "keywords": [
-        "Penguins: An Introduction",
-        "overview",
-        "seed"
+        "Introduction to Penguins",
+        "intro",
+        "core"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.98,
-      "query": "Penguins: An Introduction overview seed"
+      "target_duration_sec": 20,
+      "priority": 1,
+      "query": "Introduction to Penguins intro core"
     },
     {
       "segment_id": "seg_002",
-      "concept": "Penguin Basic Characteristics",
+      "concept": "Penguin Characteristics",
       "keywords": [
-        "Penguin Basic Characteristics",
+        "Penguin Characteristics",
         "biology",
-        "traits"
+        "adaptations"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.85,
-      "query": "Penguin Basic Characteristics biology traits"
+      "target_duration_sec": 30,
+      "priority": 0.9,
+      "query": "Penguin Characteristics biology adaptations"
     },
     {
       "segment_id": "seg_003",
-      "concept": "Penguin Species Diversity",
+      "concept": "Aquatic Adaptations",
       "keywords": [
-        "Penguin Species Diversity",
-        "classification",
-        "types"
+        "Aquatic Adaptations",
+        "adaptations",
+        "behavior"
       ],
-      "target_duration_sec": 3,
+      "target_duration_sec": 25,
       "priority": 0.8,
-      "query": "Penguin Species Diversity classification types"
+      "query": "Aquatic Adaptations adaptations behavior"
     },
     {
       "segment_id": "seg_004",
-      "concept": "Emperor Penguin: King of the Ice",
+      "concept": "Penguin Diet",
       "keywords": [
-        "Emperor Penguin: King of the Ice",
-        "species",
-        "example"
+        "Penguin Diet",
+        "behavior",
+        "ecology"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.7,
-      "query": "Emperor Penguin: King of the Ice species example"
+      "target_duration_sec": 20,
+      "priority": 0.8,
+      "query": "Penguin Diet behavior ecology"
     },
     {
       "segment_id": "seg_005",
-      "concept": "Adelie Penguin: Antarctic Resident",
+      "concept": "Hunting Strategies",
       "keywords": [
-        "Adelie Penguin: Antarctic Resident",
-        "species",
-        "example"
+        "Hunting Strategies",
+        "behavior"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.65,
-      "query": "Adelie Penguin: Antarctic Resident species example"
+      "target_duration_sec": 20,
+      "priority": 0.7,
+      "query": "Hunting Strategies behavior"
     },
     {
       "segment_id": "seg_006",
-      "concept": "Galapagos Penguin: Equatorial Survivor",
+      "concept": "Flightless Birds",
       "keywords": [
-        "Galapagos Penguin: Equatorial Survivor",
-        "species",
-        "example",
-        "unique"
+        "Flightless Birds",
+        "adaptations"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.6,
-      "query": "Galapagos Penguin: Equatorial Survivor species example unique"
+      "target_duration_sec": 15,
+      "priority": 0.7,
+      "query": "Flightless Birds adaptations"
     },
     {
       "segment_id": "seg_007",
-      "concept": "Penguin Adaptations for Survival",
+      "concept": "Penguin Habitats",
       "keywords": [
-        "Penguin Adaptations for Survival",
-        "biology",
-        "evolution"
+        "Penguin Habitats",
+        "habitat",
+        "geography"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.8,
-      "query": "Penguin Adaptations for Survival biology evolution"
+      "target_duration_sec": 25,
+      "priority": 0.9,
+      "query": "Penguin Habitats habitat geography"
     },
     {
       "segment_id": "seg_008",
-      "concept": "Penguin Habitats & Distribution",
+      "concept": "Antarctic Penguins",
       "keywords": [
-        "Penguin Habitats & Distribution",
-        "geography",
-        "environment"
+        "Antarctic Penguins",
+        "habitat",
+        "species_group"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.75,
-      "query": "Penguin Habitats & Distribution geography environment"
+      "target_duration_sec": 20,
+      "priority": 0.8,
+      "query": "Antarctic Penguins habitat species_group"
     },
     {
       "segment_id": "seg_009",
-      "concept": "Threats to Penguin Populations",
+      "concept": "Emperor Penguin",
       "keywords": [
-        "Threats to Penguin Populations",
-        "conservation",
-        "threats"
+        "Emperor Penguin",
+        "species",
+        "antarctic"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.9,
-      "query": "Threats to Penguin Populations conservation threats"
+      "target_duration_sec": 25,
+      "priority": 0.8,
+      "query": "Emperor Penguin species antarctic"
     },
     {
       "segment_id": "seg_010",
-      "concept": "Conservation Efforts for Penguins",
+      "concept": "Adélie Penguin",
       "keywords": [
-        "Conservation Efforts for Penguins",
-        "conservation",
-        "solutions"
+        "Adélie Penguin",
+        "species",
+        "antarctic"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.95,
-      "query": "Conservation Efforts for Penguins conservation solutions"
+      "target_duration_sec": 20,
+      "priority": 0.7,
+      "query": "Adélie Penguin species antarctic"
     },
     {
       "segment_id": "seg_011",
-      "concept": "Climate Change & Ice Loss",
+      "concept": "Temperate Penguins",
       "keywords": [
-        "Climate Change & Ice Loss",
-        "threats",
-        "climate"
+        "Temperate Penguins",
+        "habitat",
+        "species_group"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.85,
-      "query": "Climate Change & Ice Loss threats climate"
+      "target_duration_sec": 20,
+      "priority": 0.7,
+      "query": "Temperate Penguins habitat species_group"
     },
     {
       "segment_id": "seg_012",
-      "concept": "Overfishing & Food Scarcity",
+      "concept": "Little Blue Penguin",
       "keywords": [
-        "Overfishing & Food Scarcity",
-        "threats",
-        "food_chain"
+        "Little Blue Penguin",
+        "species",
+        "temperate"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.8,
-      "query": "Overfishing & Food Scarcity threats food_chain"
+      "target_duration_sec": 20,
+      "priority": 0.7,
+      "query": "Little Blue Penguin species temperate"
     },
     {
       "segment_id": "seg_013",
-      "concept": "Penguin Reproduction & Life Cycle",
+      "concept": "Penguin Species Overview",
       "keywords": [
-        "Penguin Reproduction & Life Cycle",
-        "biology",
-        "life_cycle"
+        "Penguin Species Overview",
+        "species",
+        "classification"
       ],
-      "target_duration_sec": 3,
-      "priority": 0.65,
-      "query": "Penguin Reproduction & Life Cycle biology life_cycle"
+      "target_duration_sec": 30,
+      "priority": 0.9,
+      "query": "Penguin Species Overview species classification"
     },
     {
       "segment_id": "seg_014",
-      "concept": "Penguin Diet & Hunting Strategies",
+      "concept": "Penguin Conservation",
       "keywords": [
-        "Penguin Diet & Hunting Strategies",
-        "ecology",
+        "Penguin Conservation",
+        "conservation",
+        "threats"
+      ],
+      "target_duration_sec": 30,
+      "priority": 0.9,
+      "query": "Penguin Conservation conservation threats"
+    },
+    {
+      "segment_id": "seg_015",
+      "concept": "Penguin Reproduction",
+      "keywords": [
+        "Penguin Reproduction",
+        "life_cycle",
         "behavior"
       ],
-      "target_duration_sec": 3,
+      "target_duration_sec": 25,
+      "priority": 0.8,
+      "query": "Penguin Reproduction life_cycle behavior"
+    },
+    {
+      "segment_id": "seg_016",
+      "concept": "Penguin Chicks",
+      "keywords": [
+        "Penguin Chicks",
+        "life_cycle"
+      ],
+      "target_duration_sec": 20,
       "priority": 0.7,
-      "query": "Penguin Diet & Hunting Strategies ecology behavior"
+      "query": "Penguin Chicks life_cycle"
     }
   ]
 }

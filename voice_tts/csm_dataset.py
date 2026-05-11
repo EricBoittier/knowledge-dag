@@ -22,6 +22,7 @@ if str(_KD / "voice_ft") not in sys.path:
 from common import load_local_audio_metadata_dir  # noqa: E402
 
 
+<<<<<<< HEAD
 def _mono_rms(audio_array) -> float:
     a = np.asarray(audio_array, dtype=np.float64)
     if a.size == 0:
@@ -39,6 +40,8 @@ def _peak_normalize(audio_array, peak_limit: float) -> np.ndarray:
     return (a * scale).astype(np.float32, copy=False)
 
 
+=======
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
 def _tensor_batch_to_hf_dataset(rows: list[dict]) -> Dataset:
     """Avoid ``Dataset.from_list`` on Python 3.14 (dill / ``Pickler._batch_setitems``)."""
 
@@ -63,6 +66,7 @@ def _tensor_batch_to_hf_dataset(rows: list[dict]) -> Dataset:
     )
 
 
+<<<<<<< HEAD
 def load_local_csm_raw(
     data_dir: Path | str,
     *,
@@ -107,6 +111,12 @@ def load_local_csm_raw(
 
         ds = ds.map(_norm_peak)
 
+=======
+def load_local_csm_raw(data_dir: Path | str, *, speaker_id: str = "0"):
+    """Load metadata.csv + audio/ at 24 kHz; add ``source`` for CSM."""
+    root = Path(data_dir).resolve()
+    ds = load_local_audio_metadata_dir(root, target_sr=24_000)
+>>>>>>> 74b0067 (Enhance audio snippet functionality and update project structure)
     n = len(ds)
     return ds.add_column("source", [speaker_id] * n)
 

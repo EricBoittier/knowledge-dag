@@ -9,6 +9,7 @@
     "desktop": "node ./apps/desktop/server.js",
     "run:dry": "npm run build && node ./dist/core/src/cli/build-project.js --project ./projects/walrus-dfs --dry-run",
     "run": "npm run build && node ./dist/core/src/cli/build-project.js --project ./projects/walrus-dfs",
+    "run:env": "bash ./scripts/build_project_env.sh",
     "test:crop-validation": "npm run build && node --test ./dist/timeline-davinci/src/validate-crop.test.js ./dist/timeline-davinci/src/export-variant.test.js"
   },
   "devDependencies": {
